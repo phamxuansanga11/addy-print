@@ -25,6 +25,24 @@ header {
               font-size: 16px;
               line-height: $lh-20;
               color: $black-cl;
+              padding: 10px 0;
+              position: relative;
+              &::after {
+                content: "";
+                height: 4px;
+                width: 50%;
+                background-color: $primary-cl;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                display: none;
+              }
+              &.active {
+                color: $primary-cl;
+                &::after {
+                  display: block;
+                }
+              }
             }
           }
         }
@@ -52,7 +70,7 @@ header {
           &::before {
             content: "";
             display: block;
-            height: 5px;
+            height: 4px;
             width: 50px;
             background-color: $primary-cl;
             margin-bottom: 8px;
@@ -60,7 +78,7 @@ header {
           &::after {
             content: "";
             display: block;
-            height: 5px;
+            height: 4px;
             width: 50px;
             background-color: $primary-cl;
             margin-top: 8px;
