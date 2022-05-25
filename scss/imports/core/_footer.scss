@@ -1,0 +1,144 @@
+// css footer
+footer {
+  height: 370px;
+  background-color: #ffe7e1;
+  display: flex;
+  .--container__footer {
+    margin: auto;
+    .wrapper__gird {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 50px;
+      height: 100%;
+      .wrapper__gird-item {
+        .title {
+          margin-bottom: 32px;
+          h3 {
+            font-family: "beMedium500";
+            font-size: 24px;
+            line-height: 41px;
+          }
+        }
+        .text__content {
+          p {
+            font-family: "beRegular400";
+            font-size: 14px;
+            line-height: 21px;
+            margin-bottom: 16px;
+            span {
+              color: $primary-cl;
+            }
+          }
+        }
+      }
+      .--nthchild1 {
+        .title {
+          h3 {
+            margin-left: 10px;
+          }
+        }
+      }
+      .--nthchild2 {
+        padding-left: 30px;
+        .title {
+          h3 {
+          }
+        }
+      }
+      .--nthchild3 {
+        .title {
+          h3 {
+            font-size: 23px;
+          }
+        }
+        .icon__content {
+          display: flex;
+          i {
+            margin-right: 18px;
+          }
+        }
+        > img {
+          margin-top: 20px;
+        }
+      }
+      .--nthchild4 {
+        padding-left: 30px;
+        .btn__download {
+          .btn__download-chplay {
+            margin-bottom: 17px;
+          }
+          .btn__download-appstore {
+            i {
+              color: #f4f7ff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 993px) {
+  footer {
+    height: auto;
+    padding: 40px 0;
+  }
+  footer .--container__footer .wrapper__gird {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+  footer .--container__footer .wrapper__gird .--nthchild1 .title {
+    justify-content: center;
+  }
+  footer .--container__footer .wrapper__gird .--nthchild3 .icon__content {
+    justify-content: center;
+    i {
+      margin: 0 12px;
+    }
+  }
+  footer .--container__footer .wrapper__gird .--nthchild4 {
+    display: grid;
+    .btn__download {
+      margin: auto;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  footer
+    .--container__footer
+    .wrapper__gird
+    .--nthchild4
+    .btn__download
+    .btn__download-chplay {
+    margin-right: 20px;
+  }
+  footer
+    .--container__footer
+    .wrapper__gird
+    .--nthchild4
+    .btn__download
+    .btn__download-appstore {
+    margin-left: 20px;
+  }
+  footer
+    .--container__footer
+    .wrapper__gird
+    .wrapper__gird-item
+    .text__content
+    p {
+    font-size: 20px;
+  }
+}
+
+@media screen and(max-width: 767px) {
+  footer
+    .--container__footer
+    .wrapper__gird
+    .wrapper__gird-item
+    .text__content
+    p {
+    line-height: 26px;
+  }
+}

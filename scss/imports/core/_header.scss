@@ -1,0 +1,110 @@
+// css header
+header {
+  height: var(--height-header);
+  .container {
+    height: var(--height-header);
+    .main__header {
+      height: var(--height-header);
+      display: flex;
+      align-items: center;
+      .main__header-logo {
+        display: flex;
+        h1 {
+          display: none;
+        }
+      }
+      .main__header-nav {
+        margin-left: auto;
+        margin-right: auto;
+        ul {
+          display: flex;
+          li {
+            margin: 0 29px;
+            a {
+              font-family: $fm-beR400;
+              font-size: 16px;
+              line-height: $lh-20;
+              color: $black-cl;
+            }
+          }
+        }
+      }
+      .main__header-nav-mobile {
+        display: none;
+        .icon__menu-mobile {
+          &.active {
+            span {
+              visibility: hidden;
+            }
+            &::before {
+              transform: rotate(45deg) translate(9px, 9px);
+            }
+            &::after {
+              transform: rotate(-45deg) translate(8px, -8px);
+            }
+          }
+          span {
+            display: block;
+            height: 4px;
+            width: 50px;
+            background-color: $primary-cl;
+          }
+          &::before {
+            content: "";
+            display: block;
+            height: 5px;
+            width: 50px;
+            background-color: $primary-cl;
+            margin-bottom: 8px;
+          }
+          &::after {
+            content: "";
+            display: block;
+            height: 5px;
+            width: 50px;
+            background-color: $primary-cl;
+            margin-top: 8px;
+          }
+        }
+      }
+      .main__header-btn {
+        width: 163px;
+        height: 48px;
+        border-radius: 39px;
+        background-color: $primary-cl;
+        display: grid;
+        p {
+          font-family: $fm-beR400;
+          font-size: 17px;
+          line-height: 23px;
+          color: $white-cl;
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 993px) {
+  header .container .main__header {
+    justify-content: space-between;
+  }
+  header .container .main__header .main__header-btn {
+    display: none;
+  }
+  header .container .main__header .main__header-nav ul li {
+    margin-right: 0;
+  }
+  header .container .main__header .main__header-nav {
+    margin-right: 0;
+  }
+}
+
+@media screen and(max-width: 767px) {
+  header .container .main__header .main__header-nav {
+    display: none;
+  }
+  header .container .main__header .main__header-nav-mobile {
+    display: block;
+  }
+}
