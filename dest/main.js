@@ -9,7 +9,7 @@ const tagaHeader = document.querySelectorAll(
 
 tagaHeader.forEach((taga) => {
   taga.addEventListener("click", (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     tagaHeader.forEach((removeActive) => {
       removeActive.classList.remove("active");
     });
@@ -47,18 +47,20 @@ window.addEventListener("scroll", (e) => {
 //   });
 // });
 
-console.log(tagaHeader);
+const a = document.querySelectorAll(".main__header .main__header-nav ul li p");
 
-tagaHeader.forEach((tagaMenu, index) => {
+a.forEach((tagaMenu, index) => {
   let href = tagaMenu.getAttribute("href");
   console.log(href);
   const className = href.replace("#", "");
-  const classSection = document.querySelector("." + className);
-
+  let classSection = document.querySelector("." + className);
   // sections.push(classSection);
   tagaMenu.addEventListener("click", (e) => {
     e.preventDefault();
-    tagaHeader.forEach((tagaActive) => {
+    tagaHeader.forEach((removeActive) => {
+      removeActive.classList.remove("active");
+    });
+    a.forEach((tagaActive) => {
       tagaActive.classList.remove("active");
     });
     let positionSection = classSection.offsetTop;

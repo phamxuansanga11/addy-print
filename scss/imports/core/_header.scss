@@ -6,6 +6,8 @@ header {
   z-index: 200;
   background-color: #ffffff;
   height: var(--height-header);
+  -webkit-box-shadow: 0px 2px 3px 0px #ccc;
+  box-shadow: 0px 2px 3px 0px #ccc;
   .container {
     height: var(--height-header);
     .main__header {
@@ -25,6 +27,7 @@ header {
           display: flex;
           li {
             margin: 0 29px;
+            display: flex;
             a {
               font-family: $fm-beR400;
               font-size: 16px;
@@ -41,6 +44,34 @@ header {
                 left: 50%;
                 transform: translateX(-50%);
                 display: none;
+                margin-top: 5px;
+              }
+              &.active {
+                color: $primary-cl;
+                &::after {
+                  display: block;
+                }
+              }
+            }
+            p {
+              font-family: $fm-beR400;
+              font-size: 16px;
+              line-height: $lh-20;
+              color: $black-cl;
+              padding: 10px 0;
+              position: relative;
+              cursor: pointer;
+              user-select: none;
+              &::after {
+                content: "";
+                height: 4px;
+                width: 50%;
+                background-color: $primary-cl;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                display: none;
+                margin-top: 5px;
               }
               &.active {
                 color: $primary-cl;

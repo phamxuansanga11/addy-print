@@ -895,33 +895,6 @@
   }
 }
 
-.icon__zalo-fixed {
-  margin-top: -143px;
-  position: absolute;
-  right: 0;
-  i {
-    display: block;
-  }
-  .text {
-    width: 205px;
-    height: 44px;
-    background-color: #00acd4;
-    border-radius: 32px;
-    position: absolute;
-    right: 74px;
-    top: 50%;
-    transform: translateY(-30%);
-    -webkit-box-shadow: 0px 0px 12px 0px #0000005c;
-    box-shadow: 0px 0px 12px 0px #0000005c;
-    display: flex;
-    p {
-      color: #ffffff;
-      margin: auto;
-      font-family: $fm-beR400;
-    }
-  }
-}
-
 @media screen and(max-width: 1255px) {
   .price .container .price__content {
     overflow-x: scroll;
