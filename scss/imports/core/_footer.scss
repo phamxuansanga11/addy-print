@@ -12,7 +12,7 @@ footer {
       height: 100%;
       .wrapper__gird-item {
         .title {
-          margin-bottom: 26px;
+          margin-bottom: 15px;
           h2 {
             font-family: "InterMedium500";
             font-size: 35px;
@@ -34,6 +34,13 @@ footer {
             span {
               color: $primary-cl;
             }
+            a {
+              color: #141414;
+              &:hover {
+                text-decoration: underline;
+                color: blue;
+              }
+            }
           }
         }
       }
@@ -50,6 +57,19 @@ footer {
           h3 {
           }
         }
+        .text__content {
+          a {
+            font-family: "beRegular400";
+            font-size: 16px;
+            line-height: 21px;
+            margin-bottom: 16px;
+            color: #141414;
+            &:hover {
+              text-decoration: underline;
+              color: blue;
+            }
+          }
+        }
       }
       .--nthchild3 {
         .title {
@@ -59,8 +79,8 @@ footer {
         }
         .icon__content {
           display: flex;
-          i {
-            margin-right: 18px;
+          a {
+            margin: 9px;
           }
         }
         > img {
@@ -70,6 +90,11 @@ footer {
       .--nthchild4 {
         padding-left: 30px;
         .btn__download {
+          .btn {
+            a {
+              display: block;
+            }
+          }
           .btn__download-chplay {
             margin-bottom: 17px;
           }

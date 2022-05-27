@@ -34,6 +34,9 @@
       display: flex;
       .btn {
         margin: 0 10px;
+        a {
+          display: block;
+        }
       }
     }
   }
@@ -433,7 +436,8 @@
 .feedback {
   margin-top: 100px;
   margin-bottom: 100px;
-  .container {
+  .--container__feedback {
+    position: relative;
     h2 {
       font-family: "InterMedium500";
       font-size: 44px;
@@ -458,8 +462,10 @@
     }
     .feedback__slider {
       margin-top: 60px;
-      position: relative;
+      height: 433px;
+      overflow: hidden;
       .feedback__slider-item {
+        width: 100%;
         display: grid;
         grid-template-columns: 58% 38%;
         gap: 4%;
@@ -513,39 +519,39 @@
           }
         }
       }
-      .feedback__slider-btn {
-        position: absolute;
-        left: 55px;
-        bottom: 2px;
+    }
+    .feedback__slider-btn {
+      position: absolute;
+      left: 55px;
+      bottom: 2px;
+      display: flex;
+      .btn {
+        width: 44px;
+        height: 44px;
+        border-radius: 26px;
+        background-color: #ffffff;
         display: flex;
-        .btn {
-          width: 44px;
-          height: 44px;
-          border-radius: 26px;
-          background-color: #ffffff;
-          display: flex;
-          -webkit-box-shadow: 0px 0px 12px 2px #ccc;
-          box-shadow: 0px 0px 12px 2px #ccc;
-          cursor: pointer;
-          &:hover {
-            i {
-              color: $primary-cl;
-            }
-          }
+        -webkit-box-shadow: 0px 0px 12px 2px #ccc;
+        box-shadow: 0px 0px 12px 2px #ccc;
+        cursor: pointer;
+        &:hover {
           i {
-            margin: auto;
-            color: #141414;
+            color: $primary-cl;
           }
         }
-        .btn__prev {
-          i {
-            transform: rotate(180deg);
-          }
+        i {
+          margin: auto;
+          color: #141414;
         }
-        .btn__next {
-          margin-left: 20px;
-          i {
-          }
+      }
+      .btn__prev {
+        i {
+          transform: rotate(180deg);
+        }
+      }
+      .btn__next {
+        margin-left: 20px;
+        i {
         }
       }
     }
@@ -682,6 +688,8 @@
               color: #848484;
             }
             .btn__submit {
+              outline: none;
+              border: none;
               width: 209px;
               height: 67px;
               border-radius: 12px;
@@ -1065,6 +1073,9 @@
   .price .container .price__content .--first .item {
     width: 100%;
   }
+  .feedback .--container__feedback .feedback__slider-btn {
+    left: 15px;
+  }
 }
 
 @media screen and(max-width: 900px) {
@@ -1088,6 +1099,10 @@
 }
 
 @media screen and(max-width: 767px) {
+  //slider feedback
+  .feedback .--container__feedback .feedback__slider {
+    height: auto;
+  }
   .download .wrapper__text {
     width: 500px;
   }
@@ -1176,6 +1191,12 @@
   .price .container .price__content .--first .item > p {
     font-size: 14px;
   }
+  .story .container .story__content .story__content-text {
+    border-radius: 6px;
+  }
+  .story .container .story__content .story__content-img {
+    border-radius: 6px;
+  }
 }
 
 @media screen and(max-width: 576px) {
@@ -1215,6 +1236,22 @@
   }
   .contact .container .contact__title h2 {
     font-size: 30px;
+  }
+  .profit {
+    margin-top: 50px;
+  }
+  .price {
+    margin-top: 50px;
+  }
+  .story {
+    margin-top: 60px;
+  }
+  .feedback {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .blog {
+    margin-top: 50px;
   }
 }
 
@@ -1316,6 +1353,33 @@
     margin-top: 50px;
   }
   .story {
-    margin-top: 60px;
+    margin-top: 50px;
+  }
+  .blog {
+    margin-top: 50px;
+  }
+}
+
+@media screen and(max-width: 391px) {
+  .price .container .price__content .--first {
+    width: 170px;
+  }
+  .price .container .price__content .wrapper__item-slider {
+    transform: translateX(178px);
+  }
+  .price .container .price__content .wrapper__item-slider .price__content-item {
+    width: 188px;
+  }
+  .price
+    .container
+    .price__content
+    .wrapper__item-slider
+    .price__content-item
+    .--bottom
+    .item-btn {
+    width: 130px;
+  }
+  .price .container .price__content .--first .item > p {
+    font-size: 13px;
   }
 }

@@ -1,6 +1,5 @@
 const header = document.querySelector("header");
 const heightHeader = header.offsetHeight;
-console.log(heightHeader);
 
 //event click active menu
 const tagaHeader = document.querySelectorAll(
@@ -38,15 +37,6 @@ window.addEventListener("scroll", (e) => {
   }
 });
 
-// tagaHeader.forEach((tagaHeader) => {
-//   const className = tagaMenu.getAttribute("href");
-//   const section = document.querySelector(className.replace("#", "."));
-//   tagaMenu.addEventListener("click", (e) => {
-//     e.preventDefault();
-//     console.log(section);
-//   });
-// });
-
 const a = document.querySelectorAll(".main__header .main__header-nav ul li p");
 
 a.forEach((tagaMenu, index) => {
@@ -70,4 +60,47 @@ a.forEach((tagaMenu, index) => {
     });
     tagaMenu.classList.add("active");
   });
+});
+
+//slider
+var elem = document.querySelector(".feedback__slider");
+var flkty = new Flickity(elem, {
+  // options
+  cellAlign: "left",
+  contain: true,
+  wrapAround: true,
+  draggable: false,
+  imagesLoaded: true,
+  prevNextButtons: false,
+  pageDots: false,
+});
+
+const btnPrev = document.querySelector(
+  ".feedback .--container__feedback .feedback__slider-btn .btn__prev"
+);
+
+const btnNext = document.querySelector(
+  ".feedback .--container__feedback .feedback__slider-btn .btn__next"
+);
+
+btnPrev.addEventListener("click", (e) => {
+  flkty.previous();
+});
+
+btnNext.addEventListener("click", (e) => {
+  flkty.next();
+});
+
+//nav menu
+const navMenu = document.querySelector(
+  "header .container .main__header .main__header-nav-mobile .show__nav-menu"
+);
+//click menu
+
+const iconMenuMobile = document.querySelector(
+  "header .container .main__header .main__header-nav-mobile .icon__menu-mobile"
+);
+iconMenuMobile.addEventListener("click", (e) => {
+  iconMenuMobile.classList.toggle("active");
+  navMenu.classList.toggle("active");
 });

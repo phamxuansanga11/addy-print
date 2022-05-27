@@ -21,7 +21,7 @@ header {
         }
       }
       .main__header-nav {
-        margin-left: auto;
+        margin-left: 150px;
         margin-right: auto;
         ul {
           display: flex;
@@ -86,15 +86,19 @@ header {
       .main__header-nav-mobile {
         display: none;
         .icon__menu-mobile {
+          cursor: pointer;
+          padding: 15px 0;
           &.active {
             span {
               visibility: hidden;
             }
             &::before {
               transform: rotate(45deg) translate(9px, 9px);
+              transition: 0.3s;
             }
             &::after {
               transform: rotate(-45deg) translate(8px, -8px);
+              transition: 0.3s;
             }
           }
           span {
@@ -110,6 +114,8 @@ header {
             width: 50px;
             background-color: $primary-cl;
             margin-bottom: 8px;
+            transform: rotate(0deg) translate(0px, 0px);
+            transition: 0.3s;
           }
           &::after {
             content: "";
@@ -118,6 +124,41 @@ header {
             width: 50px;
             background-color: $primary-cl;
             margin-top: 8px;
+            transform: rotate(0deg) translate(0px, 0px);
+            transition: 0.3s;
+          }
+        }
+        .show__nav-menu {
+          position: fixed;
+          top: 70px;
+          left: 0;
+          width: 100vw;
+          height: 100vh;
+          background-color: #000;
+          opacity: 0;
+          transition: 0.3s;
+          pointer-events: none;
+          &.active {
+            opacity: 0.9;
+            transition: 0.3s;
+            pointer-events: initial;
+          }
+          ul {
+            padding-top: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            li {
+              min-width: 100px;
+              a {
+                font-family: $fm-beR400;
+                font-size: 25px;
+                line-height: 70px;
+                color: #ffffff;
+                display: block;
+                text-align: center;
+              }
+            }
           }
         }
       }
@@ -139,6 +180,13 @@ header {
   }
 }
 
+@media screen and(max-width: 1200px) {
+  header .container .main__header .main__header-nav {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 @media screen and(max-width: 993px) {
   header .container .main__header {
     justify-content: space-between;
@@ -151,6 +199,7 @@ header {
   }
   header .container .main__header .main__header-nav {
     margin-right: 0;
+    margin-left: auto;
   }
 }
 
