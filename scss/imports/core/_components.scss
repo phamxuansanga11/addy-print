@@ -282,6 +282,22 @@ article {
   }
 }
 
+.dot {
+  overflow: hidden;
+  width: 50px !important;
+  height: 8px !important;
+  border-radius: 11px !important;
+  background-color: #e9e9e9 !important;
+  opacity: 1 !important;
+  margin: 0 5px !important;
+  &.is-selected {
+    background-color: $primary-cl !important;
+  }
+}
+
+.flickity-page-dots {
+  bottom: 0;
+}
 //thư viện của slider phản hồi từ khách hàng
 .flickity-viewport {
   overflow: initial;

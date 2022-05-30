@@ -104,19 +104,38 @@ iconMenuMobile.addEventListener("click", (e) => {
   navMenu.classList.toggle("active");
 });
 
+var cel = 3;
+function updateCell() {
+  if (tablet.matches) {
+    cel = 2;
+    return cel;
+  } else {
+    return;
+  }
+}
+function updateCellMobile() {
+  if (mobile.matches) {
+    cel = 1;
+    return cel;
+  } else {
+    return;
+  }
+}
+const tablet = window.matchMedia("(max-width: 993px)");
+const mobile = window.matchMedia("(max-width: 767px)");
+updateCell();
+updateCellMobile();
+console.log(cel);
 //slider blog
 var elem2 = document.querySelector(".blog .--container__blog .blog__slider");
 var flkty2 = new Flickity(elem2, {
   // options
-  // cellAlign: "left",
-  // contain: true,
-  wrapAround: true,
+  cellAlign: "left",
+  contain: true,
+  // wrapAround: true,
   prevNextButtons: false,
-  pageDots: false,
-  // draggable: true,
   imagesLoaded: true,
-  // groupCells: "100%",
-  groupCells: 1,
+  groupCells: cel,
 });
 
 const btnPrevSliderBlog = document.querySelector(
@@ -132,3 +151,18 @@ const btnNextSliderBlog = document.querySelector(
 btnNextSliderBlog.addEventListener("click", () => {
   flkty2.next();
 });
+
+// const cell1 = document.querySelector(".cell1");
+// const cell2 = document.querySelector(".cell2");
+// const Ul = document.querySelector("dotspage");
+// console.log(Ul)
+
+// Ul.flickity("selectCell", ".cell1");
+
+// cell1.addEventListener("click", (e) => {
+//   console.log(cell1);
+// });
+
+// cell2.addEventListener("click", (e) => {
+//   $dotspage.flickity("selectCell", ".cell2");
+// });

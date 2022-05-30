@@ -216,3 +216,14 @@ header {
     display: block;
   }
 }
+
+@media screen and(max-width: 576px) {
+  header {
+    height: var(--height-header-mobile);
+    .container {
+      .main__header {
+        height: var(--height-header-mobile);
+      }
+    }
+  }
+}

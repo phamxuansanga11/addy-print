@@ -58,6 +58,8 @@ footer {
           }
         }
         .text__content {
+          display: flex;
+          flex-direction: column;
           a {
             font-family: "beRegular400";
             font-size: 16px;
