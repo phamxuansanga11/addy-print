@@ -173,6 +173,14 @@
   }
 }
 
+@media screen and(max-width: 1200px) {
+  .blogs .container .blog__content {
+    display: grid;
+    grid-template-columns: 71% 26%;
+    gap: 3%;
+  }
+}
+
 @media screen and(max-width: 993px) {
   .blogs .container .blog__content {
     grid-template-columns: 1fr;

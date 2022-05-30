@@ -117,6 +117,7 @@
           }
           .description__item {
             margin-left: 24px;
+            max-width: 475px;
             h4 {
               font-family: "InterRegular400";
               font-size: 20px;
@@ -222,7 +223,7 @@
 }
 
 @media screen and(max-width: 1200px) {
-  .blogs .container .blog__content {
+  .blog-detail__content .container .blog-detail__content-grid {
     margin-top: 70px;
     display: grid;
     grid-template-columns: 70% 27%;
@@ -400,5 +401,20 @@
   }
   .blog-detail__content .container .btn-back a {
     font-size: 17px;
+  }
+  .blog-detail__content
+    .container
+    .blog-detail__content-grid
+    .blog-sidebar
+    .thumbnail {
+    flex-direction: column;
+  }
+  .blog-detail__content
+    .container
+    .blog-detail__content-grid
+    .blog-sidebar
+    .thumbnail
+    .thumbnail__two {
+    margin-left: 0;
   }
 }
