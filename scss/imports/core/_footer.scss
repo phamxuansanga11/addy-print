@@ -97,6 +97,10 @@ footer {
               display: block;
             }
           }
+          .btn__download-windowns {
+            margin-bottom: 17px;
+            margin-right: 20px;
+          }
           .btn__download-chplay {
             margin-bottom: 17px;
           }
@@ -200,5 +204,22 @@ footer {
     .text__content
     p {
     font-size: 16px;
+  }
+}
+
+@media screen and(max-width: 576px) {
+  .btn__download-chplay.btn {
+    margin-bottom: 0;
+  }
+  footer .--container__footer .wrapper__gird .--nthchild4 .btn__download .btn {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and(max-width: 391px) {
+  footer .--container__footer .wrapper__gird .--nthchild3 > img {
+    width: 50%;
+    margin-top: 0;
   }
 }

@@ -104,19 +104,19 @@ iconMenuMobile.addEventListener("click", (e) => {
   navMenu.classList.toggle("active");
 });
 
-var cel = 3;
+var cellColumn = 3;
 function updateCell() {
   if (tablet.matches) {
-    cel = 2;
-    return cel;
+    cellColumn = 2;
+    return cellColumn;
   } else {
     return;
   }
 }
 function updateCellMobile() {
   if (mobile.matches) {
-    cel = 1;
-    return cel;
+    cellColumn = 1;
+    return cellColumn;
   } else {
     return;
   }
@@ -125,7 +125,7 @@ const tablet = window.matchMedia("(max-width: 993px)");
 const mobile = window.matchMedia("(max-width: 767px)");
 updateCell();
 updateCellMobile();
-console.log(cel);
+console.log(cellColumn);
 //slider blog
 var elem2 = document.querySelector(".blog .--container__blog .blog__slider");
 var flkty2 = new Flickity(elem2, {
@@ -135,7 +135,7 @@ var flkty2 = new Flickity(elem2, {
   // wrapAround: true,
   prevNextButtons: false,
   imagesLoaded: true,
-  groupCells: cel,
+  groupCells: cellColumn,
 });
 
 const btnPrevSliderBlog = document.querySelector(
@@ -152,17 +152,29 @@ btnNextSliderBlog.addEventListener("click", () => {
   flkty2.next();
 });
 
-// const cell1 = document.querySelector(".cell1");
-// const cell2 = document.querySelector(".cell2");
-// const Ul = document.querySelector("dotspage");
-// console.log(Ul)
+//event click menu mobile scroll to section
+const navMenuMobile = document.querySelector(
+  "header .container .main__header .main__header-nav-mobile .show__nav-menu"
+);
+const menuMobileOption = document.querySelectorAll(
+  "header .container .main__header .main__header-nav-mobile .show__nav-menu .menu-mobile__list .option p"
+);
 
-// Ul.flickity("selectCell", ".cell1");
-
-// cell1.addEventListener("click", (e) => {
-//   console.log(cell1);
-// });
-
-// cell2.addEventListener("click", (e) => {
-//   $dotspage.flickity("selectCell", ".cell2");
-// });
+menuMobileOption.forEach((tagaMenu, index) => {
+  tagaMenu.addEventListener("click", (e) => {
+    navMenuMobile.classList.remove("active");
+    iconMenuMobile.classList.remove("active");
+  });
+  let href = tagaMenu.getAttribute("href");
+  const className = href.replace("#", "");
+  let classSection = document.querySelector("." + className);
+  // sections.push(classSection);
+  tagaMenu.addEventListener("click", (e) => {
+    e.preventDefault();
+    let positionSection = classSection.offsetTop;
+    window.scrollTo({
+      top: positionSection - heightHeader,
+      behavior: "smooth",
+    });
+  });
+});

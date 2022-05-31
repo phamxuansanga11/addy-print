@@ -143,6 +143,7 @@ header {
           opacity: 0;
           transition: 0.3s;
           pointer-events: none;
+          user-select: none;
           &.active {
             opacity: 0.9;
             transition: 0.3s;
@@ -162,6 +163,23 @@ header {
                 color: #ffffff;
                 display: block;
                 text-align: center;
+                opacity: 1;
+                &:hover {
+                  opacity: 0.7;
+                }
+              }
+              p {
+                font-family: $fm-beR400;
+                font-size: 25px;
+                line-height: 70px;
+                color: #ffffff;
+                display: block;
+                text-align: center;
+                cursor: pointer;
+                opacity: 1;
+                &:hover {
+                  opacity: 0.7;
+                }
               }
             }
           }

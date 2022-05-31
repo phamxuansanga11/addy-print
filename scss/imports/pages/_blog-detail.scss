@@ -51,6 +51,7 @@
               font-size: 16px;
               line-height: 19px;
               color: #666666;
+              text-align: center;
             }
           }
         }
@@ -416,5 +417,54 @@
     .thumbnail
     .thumbnail__two {
     margin-left: 0;
+  }
+}
+
+@media screen and(max-width: 390px) {
+  .blog-detail__content
+    .container
+    .blog-detail__content-grid
+    .blog-detail
+    .blog-detail__title
+    > h1 {
+    font-size: 27px;
+  }
+  .blog-detail__content
+    .container
+    .blog-detail__content-grid
+    .blog-detail
+    .blog-detail__title
+    > p {
+    font-size: 18px;
+  }
+  .blog-detail__content
+    .container
+    .blog-detail__content-grid
+    .blog-detail
+    .blog-detail__img
+    .description__img
+    p {
+    font-size: 12px;
+  }
+  .blog-detail__content
+    .container
+    .blog-detail__content-grid
+    .blog-detail
+    .blog-detail__text
+    h2 {
+    font-size: 18px;
+  }
+  .blog-detail__content
+    .container
+    .blog-detail__content-grid
+    .blog-detail
+    .blog-detail__text
+    p {
+    font-size: 15px;
+  }
+  .input__signup .container .input__signup-content .input .btn-signup {
+    width: 110px;
+    height: 45px;
+    font-size: 16px;
   }
 }
