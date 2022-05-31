@@ -1457,8 +1457,26 @@
     .item-btn {
     width: 160px;
   }
+  .feedback
+    .--container__feedback
+    .feedback__slider
+    .feedback__slider-item
+    .feedback__slider-text
+    .param {
+    margin-top: 15px;
+  }
+  .contact .container .contact__title {
+    margin-bottom: 20px;
+    > h2 {
+      font-size: 21px;
+      line-height: 34px;
+    }
+  }
   .blog .--container__blog .blog__slider {
     height: 470px;
+  }
+  footer .--container__footer .wrapper__gird .--nthchild3 > img {
+    margin-top: 0;
   }
 }
 
@@ -1479,13 +1497,33 @@
     width: 345px;
   }
   .price .container .price__content .--first {
-    width: 200px;
+    width: 170px;
   }
   .price .container .price__content .wrapper__item-slider {
-    transform: translateX(205px);
+    transform: translateX(183px);
   }
   .price .container .price__content .wrapper__item-slider .price__content-item {
-    width: 190px;
+    width: 170px;
+  }
+  .price .container .price__content .wrapper__item-slider .price__content-item {
+    &:hover {
+      .--title {
+        align-items: flex-start;
+        padding-left: 10px;
+      }
+    }
+  }
+  .price
+    .container
+    .price__content
+    .wrapper__item-slider
+    .price__content-item
+    .--bottom
+    .item-btn {
+    width: 105px;
+    > p {
+      font-size: 14px;
+    }
   }
   .price
     .container
@@ -1524,16 +1562,27 @@
     .price__content-item
     .--title
     > p {
-    font-size: 14px;
+    font-size: 13px;
+    line-height: 17px;
   }
   .price .container .price__content .--first .item {
     padding: 0 0 0 10px;
+    > p {
+      line-height: 17px;
+      font-size: 13px;
+    }
   }
-  .price .container .price__content .--first .item > p {
-    line-height: 20px;
+  .price
+    .container
+    .price__content
+    .wrapper__item-slider
+    .price__content-item
+    .--title
+    .favorite {
+    width: 178px;
   }
   .profit {
-    margin-top: 50px;
+    margin-top: 30px;
   }
   .price {
     margin-top: 50px;
@@ -1565,6 +1614,60 @@
 }
 
 @media screen and(max-width: 391px) {
+  .problems .container .problems__grid .--right .item .item__text h3 {
+    font-size: 18px;
+  }
+  .problems .container .problems__grid .--right .item .item__text p {
+    font-size: 13px;
+  }
+  .story .container .story__content .story__content-text .param {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .story .container .story__content .story__content-text .author {
+    font-size: 16px;
+  }
+  .story .container .story__content .story__content-text .author-detail {
+    font-size: 13px;
+  }
+  .feedback
+    .--container__feedback
+    .feedback__slider
+    .feedback__slider-item
+    .feedback__slider-text
+    .author
+    .name {
+    font-size: 20px;
+  }
+  .feedback
+    .--container__feedback
+    .feedback__slider
+    .feedback__slider-item
+    .feedback__slider-text
+    .author
+    .job {
+    font-size: 12px;
+  }
+  .feedback
+    .--container__feedback
+    .feedback__slider
+    .feedback__slider-item
+    .feedback__slider-text
+    .param {
+    margin-top: 15px;
+    > p {
+      font-size: 16px;
+    }
+  }
+  .feedback .--container__feedback .feedback__slider .feedback__slider-item {
+    gap: 1%;
+  }
+  .contact .container .contact__title {
+    margin-bottom: 20px;
+    > h2 {
+      font-size: 21px;
+    }
+  }
   .price .container .price__content .--first {
     width: 170px;
   }
@@ -1590,11 +1693,36 @@
   .price .container .price__content .--first .item > p {
     font-size: 13px;
   }
+  .contact .contact__form .container .contact__form-content .content__form {
+    height: 444px;
+  }
+  .contact
+    .contact__form
+    .container
+    .contact__form-content
+    .content__form
+    form
+    .btn__submit {
+    width: 170px;
+    height: 50px;
+    margin: 9px auto auto auto;
+  }
+  .contact
+    .contact__form
+    .container
+    .contact__form-content
+    .content__form
+    form
+    .btn__submit
+    p {
+    font-size: 18px;
+  }
   .blog .--container__blog .blog__slider {
     height: 440px;
   }
   .contact .container .contact__btn .btn {
     width: 290px;
+    height: 46px;
   }
   .contact .container .contact__btn .hotline p {
     font-size: 16px;
