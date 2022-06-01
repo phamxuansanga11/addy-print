@@ -109,14 +109,14 @@ header {
           span {
             display: block;
             height: 4px;
-            width: 50px;
+            width: 45px;
             background-color: $primary-cl;
           }
           &::before {
             content: "";
             display: block;
             height: 4px;
-            width: 50px;
+            width: 45px;
             background-color: $primary-cl;
             margin-bottom: 8px;
             transform: rotate(0deg) translate(0px, 0px);
@@ -126,7 +126,7 @@ header {
             content: "";
             display: block;
             height: 4px;
-            width: 50px;
+            width: 45px;
             background-color: $primary-cl;
             margin-top: 8px;
             transform: rotate(0deg) translate(0px, 0px);
