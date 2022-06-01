@@ -233,6 +233,9 @@ header {
   header .container .main__header .main__header-nav-mobile {
     display: block;
   }
+  .search {
+    margin-top: 60px;
+  }
 }
 
 @media screen and(max-width: 576px) {
@@ -243,5 +246,11 @@ header {
         height: var(--height-header-mobile);
       }
     }
+  }
+}
+
+@media screen and(max-width: 440px) {
+  header {
+    box-shadow: none;
   }
 }
