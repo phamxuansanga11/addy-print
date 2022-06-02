@@ -1,6 +1,6 @@
 .blog-detail__content {
   margin-top: 56px;
-  .container {
+  .container__vuejs {
     .btn-back {
       a {
         font-family: "InterRegular400";
@@ -224,23 +224,23 @@
 }
 
 @media screen and(max-width: 1200px) {
-  .blog-detail__content .container .blog-detail__content-grid {
+  .blog-detail__content .container__vuejs .blog-detail__content-grid {
     margin-top: 70px;
     display: grid;
     grid-template-columns: 70% 27%;
     gap: 3%;
   }
-  .blog-detail__content .container .blog__same {
+  .blog-detail__content .container__vuejs .blog__same {
     margin-top: 50px;
   }
 }
 
 @media screen and(max-width: 993px) {
-  .blogs .container .blog__content {
+  .blogs .container__vuejs .blog__content {
     grid-template-columns: 1fr;
   }
   .blog-detail__content
-    .container
+    .container__vuejs
     .blog-detail__content-grid
     .blog-detail
     .blog-detail__title
@@ -248,7 +248,7 @@
     font-size: 33px;
   }
   .blog-detail__content
-    .container
+    .container__vuejs
     .blog-detail__content-grid
     .blog-detail
     .blog-detail__title
@@ -256,19 +256,19 @@
     font-size: 22px;
   }
   .blog-detail__content
-    .container
+    .container__vuejs
     .blog-detail__content-grid
     .blog-detail
     .blog-detail__text
     h2 {
     font-size: 22px;
   }
-  .blog-detail__content .container .blog-detail__content-grid {
+  .blog-detail__content .container__vuejs .blog-detail__content-grid {
     grid-template-columns: 1fr;
     gap: 0;
   }
   .blog-detail__content
-    .container
+    .container__vuejs
     .blog-detail__content-grid
     .blog-sidebar
     .thumbnail {
@@ -278,7 +278,7 @@
     }
   }
   .blog-detail__content
-    .container
+    .container__vuejs
     .blog-detail__content-grid
     .blog-detail
     .blog-detail__img
@@ -286,22 +286,22 @@
     p {
     font-size: 14px;
   }
-  .blog-detail__content .container .blog__same {
+  .blog-detail__content .container__vuejs .blog__same {
     margin-right: 0;
     margin-top: 25px;
   }
-  .blog-detail__content .container .blog__comment {
+  .blog-detail__content .container__vuejs .blog__comment {
     margin-right: 0;
   }
-  .blog-detail__content .container .blog__vote {
+  .blog-detail__content .container__vuejs .blog__vote {
     margin-right: 0;
   }
-  .blog-detail__content .container .input__signup {
+  .blog-detail__content .container__vuejs .input__signup {
     margin-right: 0;
     margin-top: 0;
   }
   .blog-detail__content
-    .container
+    .container__vuejs
     .blog__same
     .bottom__line
     .blog__same-item
@@ -310,7 +310,7 @@
     font-size: 17px;
   }
   .blog-detail__content
-    .container
+    .container__vuejs
     .blog-detail__content-grid
     .blog-detail
     .blog-detail__text
@@ -320,15 +320,19 @@
 }
 
 @media screen and(max-width: 767px) {
-  .blogs .container .blog__content .blog__content-sidebar .thumbnail {
+  .blogs .container__vuejs .blog__content .blog__content-sidebar .thumbnail {
     display: block;
   }
-  .blog-detail__content .container .blog__same .bottom__line .blog__same-item {
+  .blog-detail__content
+    .container__vuejs
+    .blog__same
+    .bottom__line
+    .blog__same-item {
     display: flex;
     flex-direction: column;
   }
   .blog-detail__content
-    .container
+    .container__vuejs
     .blog__same
     .bottom__line
     .blog__same-item
@@ -339,7 +343,7 @@
     height: 100%;
   }
   .blog-detail__content
-    .container
+    .container__vuejs
     .blog__same
     .bottom__line
     .blog__same-item
@@ -353,23 +357,23 @@
   .blogs {
     margin-bottom: 45px;
   }
-  .blogs .container .blog__content {
+  .blogs .container__vuejs .blog__content {
     gap: 50px;
   }
-  .blog-detail__content .container .blog-detail__content-grid {
+  .blog-detail__content .container__vuejs .blog-detail__content-grid {
     margin-top: 40px;
   }
 }
 
 @media screen and(max-width: 460px) {
-  .blogs .container .blog__content .blog__content-item .item .title h3 {
+  .blogs .container__vuejs .blog__content .blog__content-item .item .title h3 {
     font-size: 17px;
   }
-  .blogs .container .blog__content .blog__content-item .item p {
+  .blogs .container__vuejs .blog__content .blog__content-item .item p {
     font-size: 13px;
   }
   .blog-detail__content
-    .container
+    .container__vuejs
     .blog-detail__content-grid
     .blog-detail
     .blog-detail__title
@@ -377,7 +381,7 @@
     font-size: 30px;
   }
   .blog-detail__content
-    .container
+    .container__vuejs
     .blog-detail__content-grid
     .blog-detail
     .blog-detail__title
@@ -385,7 +389,7 @@
     font-size: 20px;
   }
   .blog-detail__content
-    .container
+    .container__vuejs
     .blog-detail__content-grid
     .blog-detail
     .blog-detail__text
@@ -393,25 +397,25 @@
     font-size: 20px;
   }
   .blog-detail__content
-    .container
+    .container__vuejs
     .blog-detail__content-grid
     .blog-detail
     .blog-detail__text
     p {
     font-size: 17px;
   }
-  .blog-detail__content .container .btn-back a {
+  .blog-detail__content .container__vuejs .btn-back a {
     font-size: 17px;
   }
   .blog-detail__content
-    .container
+    .container__vuejs
     .blog-detail__content-grid
     .blog-sidebar
     .thumbnail {
     flex-direction: column;
   }
   .blog-detail__content
-    .container
+    .container__vuejs
     .blog-detail__content-grid
     .blog-sidebar
     .thumbnail
@@ -422,7 +426,7 @@
 
 @media screen and(max-width: 390px) {
   .blog-detail__content
-    .container
+    .container__vuejs
     .blog-detail__content-grid
     .blog-detail
     .blog-detail__title
@@ -430,7 +434,7 @@
     font-size: 27px;
   }
   .blog-detail__content
-    .container
+    .container__vuejs
     .blog-detail__content-grid
     .blog-detail
     .blog-detail__title
@@ -438,7 +442,7 @@
     font-size: 18px;
   }
   .blog-detail__content
-    .container
+    .container__vuejs
     .blog-detail__content-grid
     .blog-detail
     .blog-detail__img
@@ -447,7 +451,7 @@
     font-size: 12px;
   }
   .blog-detail__content
-    .container
+    .container__vuejs
     .blog-detail__content-grid
     .blog-detail
     .blog-detail__text
@@ -455,14 +459,14 @@
     font-size: 18px;
   }
   .blog-detail__content
-    .container
+    .container__vuejs
     .blog-detail__content-grid
     .blog-detail
     .blog-detail__text
     p {
     font-size: 15px;
   }
-  .input__signup .container .input__signup-content .input .btn-signup {
+  .input__signup .container__vuejs .input__signup-content .input .btn-signup {
     width: 110px;
     height: 45px;
     font-size: 16px;

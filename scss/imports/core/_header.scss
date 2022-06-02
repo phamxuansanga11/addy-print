@@ -28,9 +28,9 @@ header {
       .main__header-nav {
         margin-left: 150px;
         margin-right: auto;
-        ul {
+        .list__option-vuejs {
           display: flex;
-          li {
+          .option-vuejs {
             margin: 0 29px;
             display: flex;
             a {
@@ -149,12 +149,12 @@ header {
             transition: 0.3s;
             pointer-events: initial;
           }
-          ul {
+          .list__option-vuejs {
             padding-top: 100px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            li {
+            .option-vuejs {
               min-width: 100px;
               a {
                 font-family: $fm-beR400;
@@ -217,7 +217,12 @@ header {
   header .container__vuejs .main__header .main__header-btn {
     display: none;
   }
-  header .container__vuejs .main__header .main__header-nav ul li {
+  header
+    .container__vuejs
+    .main__header
+    .main__header-nav
+    .list__option-vuejs
+    .option-vuejs {
     margin-right: 0;
   }
   header .container__vuejs .main__header .main__header-nav {

@@ -1,7 +1,7 @@
 .blogs {
   margin-top: 56px;
   margin-bottom: 100px;
-  .container {
+  .container__vuejs {
     .blog__content {
       display: grid;
       grid-template-columns: 74% 23%;
@@ -101,8 +101,8 @@
             text-transform: uppercase;
             margin-bottom: 26px;
           }
-          ul {
-            li {
+          .list__option-vuejs {
+            .option-vuejs {
               margin-top: 10px;
               border-radius: 8px;
               padding: 10px 10px;
@@ -146,7 +146,7 @@
         }
         .number-page {
           display: flex;
-          li {
+          .option-vuejs {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -168,7 +168,7 @@
 }
 
 @media screen and(max-width: 1200px) {
-  .blogs .container .blog__content {
+  .blogs .container__vuejs .blog__content {
     display: grid;
     grid-template-columns: 71% 26%;
     gap: 3%;
@@ -176,19 +176,25 @@
 }
 
 @media screen and(max-width: 993px) {
-  .blogs .container .blog__content {
+  .blogs .container__vuejs .blog__content {
     grid-template-columns: 1fr;
   }
-  .blogs .container .blog__content .blog__content-sidebar .menu__blog ul li {
+  .blogs
+    .container__vuejs
+    .blog__content
+    .blog__content-sidebar
+    .menu__blog
+    .list__option-vuejs
+    .option-vuejs {
     width: 220px;
   }
-  .blogs .container .blog__content .blog__content-sidebar .thumbnail {
+  .blogs .container__vuejs .blog__content .blog__content-sidebar .thumbnail {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   .blogs
-    .container
+    .container__vuejs
     .blog__content
     .blog__content-sidebar
     .thumbnail
@@ -204,16 +210,16 @@
   .search .search__input {
     width: 330px;
   }
-  .blogs .container .blog__content .blog__content-item {
+  .blogs .container__vuejs .blog__content .blog__content-item {
     grid-template-columns: 1fr;
   }
-  .blogs .container .blog__content {
+  .blogs .container__vuejs .blog__content {
     gap: 50px;
   }
   .input__signup {
     margin-top: 50px;
   }
-  .blogs .container .blog__content .blog__content-sidebar .thumbnail {
+  .blogs .container__vuejs .blog__content .blog__content-sidebar .thumbnail {
     flex-direction: column;
   }
   footer {
@@ -222,10 +228,10 @@
   footer .--container__footer .wrapper__gird {
     gap: 5px;
   }
-  .input__signup .container .input__signup-content .input {
+  .input__signup .container__vuejs .input__signup-content .input {
     display: block;
   }
-  .input__signup .container .input__signup-content .input .input-signup {
+  .input__signup .container__vuejs .input__signup-content .input .input-signup {
     margin-bottom: 16px;
     width: 100%;
   }

@@ -44,7 +44,7 @@
 
 .problems {
   margin-top: 54px;
-  .container {
+  .container__vuejs {
     h2 {
       font-family: "InterMedium500";
       font-size: 44px;
@@ -113,7 +113,7 @@
 
 .profit {
   margin-top: 100px;
-  .container {
+  .container__vuejs {
     h2 {
       font-family: "InterMedium500";
       font-size: 44px;
@@ -175,7 +175,7 @@
 
 .price {
   margin-top: 100px;
-  .container {
+  .container__vuejs {
     h2 {
       font-family: "InterMedium500";
       font-size: 44px;
@@ -352,7 +352,7 @@
 
 .story {
   margin-top: 100px;
-  .container {
+  .container__vuejs {
     h2 {
       font-family: "InterMedium500";
       font-size: 44px;
@@ -547,7 +547,7 @@
 }
 
 .contact {
-  .container {
+  .container__vuejs {
     .contact__title {
       text-align: center;
       margin-bottom: 44px;
@@ -614,7 +614,7 @@
   .contact__form {
     margin-top: 44px;
     background-color: #fff4f4;
-    .container {
+    .container__vuejs {
       .contact__form-content {
         display: flex;
         justify-content: space-between;
@@ -883,18 +883,18 @@
 }
 
 @media screen and(max-width: 1255px) {
-  .price .container .price__content {
+  .price .container__vuejs .price__content {
     overflow-x: scroll;
     overflow-y: visible;
     z-index: 2;
   }
-  .price .container .price__content .--first {
+  .price .container__vuejs .price__content .--first {
     background-color: #ffffff;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     position: absolute;
   }
-  .price .container .price__content .wrapper__item-slider {
+  .price .container__vuejs .price__content .wrapper__item-slider {
     z-index: 1;
     transform: translateX(309px);
   }
@@ -904,19 +904,19 @@
   .download .wrapper__text {
     width: 750px;
   }
-  .problems .container .problems__grid {
+  .problems .container__vuejs .problems__grid {
     margin-top: 70px;
   }
-  .problems .container .problems__grid {
+  .problems .container__vuejs .problems__grid {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .problems .container .problems__grid .--left img {
+  .problems .container__vuejs .problems__grid .--left img {
     width: auto;
   }
   .feedback
-    .container
+    .container__vuejs
     .feedback__slider
     .feedback__slider-item
     .feedback__slider-text
@@ -932,7 +932,7 @@
       top: 33%;
     }
   }
-  .price .container .price__content .--first .item {
+  .price .container__vuejs .price__content .--first .item {
     height: 55px;
     padding: 0;
     padding-left: 10px;
@@ -941,11 +941,11 @@
       margin: auto;
     }
   }
-  .price .container .price__content .--first .--title {
+  .price .container__vuejs .price__content .--first .--title {
     height: 70px;
   }
   .price
-    .container
+    .container__vuejs
     .price__content
     .wrapper__item-slider
     .price__content-item
@@ -953,18 +953,22 @@
     height: 70px;
   }
   .price
-    .container
+    .container__vuejs
     .price__content
     .wrapper__item-slider
     .price__content-item
     .item {
     height: 55px;
   }
-  .price .container .price__content .wrapper__item-slider .price__content-item {
+  .price
+    .container__vuejs
+    .price__content
+    .wrapper__item-slider
+    .price__content-item {
     width: 245px;
   }
   .price
-    .container
+    .container__vuejs
     .price__content
     .wrapper__item-slider
     .price__content-item
@@ -974,7 +978,7 @@
     height: 49px;
   }
   .price
-    .container
+    .container__vuejs
     .price__content
     .wrapper__item-slider
     .price__content-item
@@ -983,7 +987,7 @@
     font-size: 15px;
   }
   .price
-    .container
+    .container__vuejs
     .price__content
     .wrapper__item-slider
     .price__content-item
@@ -993,7 +997,7 @@
     font-size: 15px;
   }
   .price
-    .container
+    .container__vuejs
     .price__content
     .wrapper__item-slider
     .price__content-item
@@ -1002,14 +1006,14 @@
     width: 160px;
   }
   .price
-    .container
+    .container__vuejs
     .price__content
     .wrapper__item-slider
     .price__content-item
     .--bottom {
     height: 78px;
   }
-  .price .container .price__content .--first .--bottom {
+  .price .container__vuejs .price__content .--first .--bottom {
     height: 78px;
   }
   .feedback .--container__feedback .feedback__slider {
@@ -1039,20 +1043,20 @@
       margin: 0 auto 20px auto;
     }
   }
-  .feedback .container h2 {
+  .feedback .container__vuejs h2 {
     font-size: 37px;
   }
   .download .wrapper__text .download__btn .btn {
     margin: 0 20px;
   }
-  .story .container .story__content {
+  .story .container__vuejs .story__content {
     margin-left: 0;
     margin-right: 0;
   }
-  .story .container .story__content .story__content-text {
+  .story .container__vuejs .story__content .story__content-text {
     padding-left: 20px;
   }
-  .story .container .story__content .story__content-text {
+  .story .container__vuejs .story__content .story__content-text {
     .param {
       font-size: 23px;
     }
@@ -1063,7 +1067,7 @@
       font-size: 15px;
     }
   }
-  .feedback .container .feedback__slider .feedback__slider-item {
+  .feedback .container__vuejs .feedback__slider .feedback__slider-item {
     .feedback__slider-img {
       -webkit-box-shadow: -18px 15px 0px 2px #ffebeb;
       box-shadow: -18px 15px 0px 2px #ffebeb;
@@ -1076,26 +1080,26 @@
       object-fit: cover;
     }
   }
-  .feedback .container .feedback__slider {
+  .feedback .container__vuejs .feedback__slider {
     padding-bottom: 60px;
     .feedback__slider-btn {
       left: 0;
       bottom: -5px;
     }
   }
-  .contact .container .contact__btn .hotline p {
+  .contact .container__vuejs .contact__btn .hotline p {
     font-size: 19px;
     span {
       font-size: 18px;
     }
   }
-  .contact .container .contact__btn .email p {
+  .contact .container__vuejs .contact__btn .email p {
     font-size: 19px;
     span {
       font-size: 18px;
     }
   }
-  .contact .contact__form .container .contact__form-content {
+  .contact .contact__form .container__vuejs .contact__form-content {
     flex-direction: column;
     padding: 40px 0;
     .content__img {
@@ -1105,7 +1109,11 @@
       }
     }
   }
-  .contact .contact__form .container .contact__form-content .content__form {
+  .contact
+    .contact__form
+    .container__vuejs
+    .contact__form-content
+    .content__form {
     width: 100%;
     margin-top: 20px;
   }
@@ -1124,22 +1132,22 @@
     font-size: 13px;
     line-height: 18px;
   }
-  .price .container .price__content {
+  .price .container__vuejs .price__content {
     overflow-x: scroll;
     overflow-y: visible;
     z-index: 2;
   }
-  .price .container .price__content .--first {
+  .price .container__vuejs .price__content .--first {
     background-color: #ffffff;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     position: absolute;
   }
-  .price .container .price__content .wrapper__item-slider {
+  .price .container__vuejs .price__content .wrapper__item-slider {
     z-index: 1;
     transform: translateX(309px);
   }
-  .price .container .price__content .--first .item {
+  .price .container__vuejs .price__content .--first .item {
     width: 100%;
   }
   .feedback .--container__feedback .feedback__slider-btn {
@@ -1197,15 +1205,15 @@
   .download .wrapper__text .download__btn .btn {
     margin: 0 5px;
   }
-  .profit .container .profit__content .profit__content-item {
+  .profit .container__vuejs .profit__content .profit__content-item {
     width: 100%;
     margin: 10px 5px;
   }
-  .story .container .story__content {
+  .story .container__vuejs .story__content {
     display: flex;
     flex-direction: column-reverse;
   }
-  .story .container .story__content .story__content-text {
+  .story .container__vuejs .story__content .story__content-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1224,7 +1232,7 @@
       padding-bottom: 10px;
     }
   }
-  .feedback .container .feedback__slider .feedback__slider-item {
+  .feedback .container__vuejs .feedback__slider .feedback__slider-item {
     grid-template-columns: 1fr;
     .feedback__slider-img {
       box-shadow: none;
@@ -1234,14 +1242,14 @@
       }
     }
   }
-  .contact .container .contact__title h2 {
+  .contact .container__vuejs .contact__title h2 {
     line-height: 37px;
   }
-  .contact .container .contact__btn {
+  .contact .container__vuejs .contact__btn {
     flex-direction: column;
     align-items: center;
   }
-  .contact .container .contact__btn .email {
+  .contact .container__vuejs .contact__btn .email {
     margin-top: 20px;
   }
   .blog .--container__blog .blog__slider {
@@ -1250,18 +1258,22 @@
   .blog .--container__blog .btn__slider-blog {
     display: none;
   }
-  .price .container .price__content .--first {
+  .price .container__vuejs .price__content .--first {
     width: 250px;
   }
-  .price .container .price__content .wrapper__item-slider {
+  .price .container__vuejs .price__content .wrapper__item-slider {
     transform: translateX(256px);
   }
-  .price .container .price__content .wrapper__item-slider .price__content-item {
+  .price
+    .container__vuejs
+    .price__content
+    .wrapper__item-slider
+    .price__content-item {
     width: 255px;
     margin: 0 2px;
   }
   .price
-    .container
+    .container__vuejs
     .price__content
     .wrapper__item-slider
     .price__content-item
@@ -1269,13 +1281,13 @@
     .item-btn {
     width: 200px;
   }
-  .price .container .price__content .--first .item > p {
+  .price .container__vuejs .price__content .--first .item > p {
     font-size: 14px;
   }
-  .story .container .story__content .story__content-text {
+  .story .container__vuejs .story__content .story__content-text {
     border-radius: 6px;
   }
-  .story .container .story__content .story__content-img {
+  .story .container__vuejs .story__content .story__content-img {
     border-radius: 6px;
   }
   .blog .--container__blog .blog__slider .blog__slider-item {
@@ -1294,7 +1306,7 @@
 }
 
 @media screen and(max-width: 576px) {
-  header .container .main__header .main__header-logo svg {
+  header .container__vuejs .main__header .main__header-logo svg {
     width: 75%;
   }
   .download .wrapper__text {
@@ -1309,26 +1321,26 @@
     max-width: 330px;
     line-height: 40px;
   }
-  .problems .container h2 {
+  .problems .container__vuejs h2 {
     font-size: 37px;
   }
-  .profit .container h2 {
+  .profit .container__vuejs h2 {
     font-size: 37px;
   }
-  .story .container h2 {
+  .story .container__vuejs h2 {
     font-size: 37px;
   }
-  .price .container h2 {
+  .price .container__vuejs h2 {
     font-size: 37px;
   }
-  .story .container .story__content .story__content-text .param {
+  .story .container__vuejs .story__content .story__content-text .param {
     padding-right: 10px;
     font-size: 25px;
   }
-  .contact .container .contact__btn .btn {
+  .contact .container__vuejs .contact__btn .btn {
     width: 390px;
   }
-  .contact .container .contact__title h2 {
+  .contact .container__vuejs .contact__title h2 {
     font-size: 30px;
   }
   .profit {
@@ -1350,23 +1362,31 @@
   .blog {
     margin-bottom: 140px;
   }
-  header .container .main__header .main__header-nav-mobile .show__nav-menu {
+  header
+    .container__vuejs
+    .main__header
+    .main__header-nav-mobile
+    .show__nav-menu {
     top: 60px;
   }
-  .price .container .price__content .--first {
+  .price .container__vuejs .price__content .--first {
     width: 225px;
   }
-  .price .container .price__content .--first .item > p {
+  .price .container__vuejs .price__content .--first .item > p {
     line-height: 20px;
   }
-  .price .container .price__content .wrapper__item-slider .price__content-item {
+  .price
+    .container__vuejs
+    .price__content
+    .wrapper__item-slider
+    .price__content-item {
     width: 200px;
   }
-  .price .container .price__content .--first .--bottom {
+  .price .container__vuejs .price__content .--first .--bottom {
     height: 60px;
   }
   .price
-    .container
+    .container__vuejs
     .price__content
     .wrapper__item-slider
     .price__content-item
@@ -1380,11 +1400,11 @@
       }
     }
   }
-  .price .container .price__content .wrapper__item-slider {
+  .price .container__vuejs .price__content .wrapper__item-slider {
     transform: translateX(238px);
   }
   .price
-    .container
+    .container__vuejs
     .price__content
     .wrapper__item-slider
     .price__content-item
@@ -1394,7 +1414,7 @@
     height: 36px;
   }
   .price
-    .container
+    .container__vuejs
     .price__content
     .wrapper__item-slider
     .price__content-item
@@ -1403,7 +1423,7 @@
     margin-bottom: 0;
   }
   .price
-    .container
+    .container__vuejs
     .price__content
     .wrapper__item-slider
     .price__content-item
@@ -1413,28 +1433,32 @@
     font-size: 13px;
     line-height: 36px;
   }
-  .input__signup .container .input__signup-content .input .btn-signup {
+  .input__signup .container__vuejs .input__signup-content .input .btn-signup {
     width: 100%;
     height: 40px;
   }
-  .input__signup .container .input__signup-content .input .input-signup {
+  .input__signup .container__vuejs .input__signup-content .input .input-signup {
     height: 42px;
     font-size: 16px;
   }
 }
 
 @media screen and(max-width: 464px) {
-  .price .container .price__content .--first {
+  .price .container__vuejs .price__content .--first {
     width: 225px;
   }
-  .price .container .price__content .wrapper__item-slider {
+  .price .container__vuejs .price__content .wrapper__item-slider {
     transform: translateX(228px);
   }
-  .price .container .price__content .wrapper__item-slider .price__content-item {
+  .price
+    .container__vuejs
+    .price__content
+    .wrapper__item-slider
+    .price__content-item {
     width: 196px;
   }
   .price
-    .container
+    .container__vuejs
     .price__content
     .wrapper__item-slider
     .price__content-item
@@ -1450,7 +1474,7 @@
     .param {
     margin-top: 15px;
   }
-  .contact .container .contact__title {
+  .contact .container__vuejs .contact__title {
     margin-bottom: 20px;
     > h2 {
       font-size: 21px;
@@ -1478,19 +1502,27 @@
     max-width: 269px;
     line-height: 40px;
   }
-  .contact .container .contact__btn .btn {
+  .contact .container__vuejs .contact__btn .btn {
     width: 345px;
   }
-  .price .container .price__content .--first {
+  .price .container__vuejs .price__content .--first {
     width: 170px;
   }
-  .price .container .price__content .wrapper__item-slider {
+  .price .container__vuejs .price__content .wrapper__item-slider {
     transform: translateX(183px);
   }
-  .price .container .price__content .wrapper__item-slider .price__content-item {
+  .price
+    .container__vuejs
+    .price__content
+    .wrapper__item-slider
+    .price__content-item {
     width: 170px;
   }
-  .price .container .price__content .wrapper__item-slider .price__content-item {
+  .price
+    .container__vuejs
+    .price__content
+    .wrapper__item-slider
+    .price__content-item {
     &:hover {
       .--title {
         align-items: flex-start;
@@ -1499,7 +1531,7 @@
     }
   }
   .price
-    .container
+    .container__vuejs
     .price__content
     .wrapper__item-slider
     .price__content-item
@@ -1511,7 +1543,7 @@
     }
   }
   .price
-    .container
+    .container__vuejs
     .price__content
     .wrapper__item-slider
     .price__content-item
@@ -1521,7 +1553,7 @@
     transform: rotate(45deg) translate(29%, -102%);
   }
   .price
-    .container
+    .container__vuejs
     .price__content
     .wrapper__item-slider
     .price__content-item
@@ -1532,7 +1564,7 @@
     line-height: 30px;
   }
   .price
-    .container
+    .container__vuejs
     .price__content
     .wrapper__item-slider
     .price__content-item
@@ -1541,7 +1573,7 @@
     font-size: 14px;
   }
   .price
-    .container
+    .container__vuejs
     .price__content
     .wrapper__item-slider
     .price__content-item
@@ -1550,7 +1582,7 @@
     font-size: 13px;
     line-height: 17px;
   }
-  .price .container .price__content .--first .item {
+  .price .container__vuejs .price__content .--first .item {
     padding: 0 0 0 10px;
     > p {
       line-height: 17px;
@@ -1558,7 +1590,7 @@
     }
   }
   .price
-    .container
+    .container__vuejs
     .price__content
     .wrapper__item-slider
     .price__content-item
@@ -1578,13 +1610,17 @@
   .blog {
     margin-top: 50px;
   }
-  .contact .contact__form .container .contact__form-content .content__form {
+  .contact
+    .contact__form
+    .container__vuejs
+    .contact__form-content
+    .content__form {
     padding-right: 15px;
     padding-left: 15px;
   }
   .contact
     .contact__form
-    .container
+    .container__vuejs
     .contact__form-content
     .content__form
     form
@@ -1593,26 +1629,30 @@
     height: 63px;
     margin: 24px auto auto auto;
   }
-  .contact .contact__form .container .contact__form-content .content__form {
+  .contact
+    .contact__form
+    .container__vuejs
+    .contact__form-content
+    .content__form {
     height: 475px;
   }
 }
 
 @media screen and(max-width: 391px) {
-  .problems .container .problems__grid .--right .item .item__text h3 {
+  .problems .container__vuejs .problems__grid .--right .item .item__text h3 {
     font-size: 18px;
   }
-  .problems .container .problems__grid .--right .item .item__text p {
+  .problems .container__vuejs .problems__grid .--right .item .item__text p {
     font-size: 13px;
   }
-  .story .container .story__content .story__content-text .param {
+  .story .container__vuejs .story__content .story__content-text .param {
     font-size: 20px;
     margin-bottom: 20px;
   }
-  .story .container .story__content .story__content-text .author {
+  .story .container__vuejs .story__content .story__content-text .author {
     font-size: 16px;
   }
-  .story .container .story__content .story__content-text .author-detail {
+  .story .container__vuejs .story__content .story__content-text .author-detail {
     font-size: 13px;
   }
   .feedback
@@ -1647,23 +1687,27 @@
   .feedback .--container__feedback .feedback__slider .feedback__slider-item {
     gap: 1%;
   }
-  .contact .container .contact__title {
+  .contact .container__vuejs .contact__title {
     margin-bottom: 20px;
     > h2 {
       font-size: 21px;
     }
   }
-  .price .container .price__content .--first {
+  .price .container__vuejs .price__content .--first {
     width: 170px;
   }
-  .price .container .price__content .wrapper__item-slider {
+  .price .container__vuejs .price__content .wrapper__item-slider {
     transform: translateX(175px);
   }
-  .price .container .price__content .wrapper__item-slider .price__content-item {
+  .price
+    .container__vuejs
+    .price__content
+    .wrapper__item-slider
+    .price__content-item {
     width: 168px;
   }
   .price
-    .container
+    .container__vuejs
     .price__content
     .wrapper__item-slider
     .price__content-item
@@ -1675,15 +1719,19 @@
       font-size: 15px;
     }
   }
-  .price .container .price__content .--first .item > p {
+  .price .container__vuejs .price__content .--first .item > p {
     font-size: 13px;
   }
-  .contact .contact__form .container .contact__form-content .content__form {
+  .contact
+    .contact__form
+    .container__vuejs
+    .contact__form-content
+    .content__form {
     height: 444px;
   }
   .contact
     .contact__form
-    .container
+    .container__vuejs
     .contact__form-content
     .content__form
     form
@@ -1694,7 +1742,7 @@
   }
   .contact
     .contact__form
-    .container
+    .container__vuejs
     .contact__form-content
     .content__form
     form
@@ -1705,56 +1753,56 @@
   .blog .--container__blog .blog__slider {
     height: 440px;
   }
-  .contact .container .contact__btn .btn {
+  .contact .container__vuejs .contact__btn .btn {
     width: 290px;
     height: 46px;
   }
-  .contact .container .contact__btn .hotline p {
+  .contact .container__vuejs .contact__btn .hotline p {
     font-size: 16px;
     span {
       font-size: 16px;
     }
   }
-  .contact .container .contact__btn .email p {
+  .contact .container__vuejs .contact__btn .email p {
     font-size: 16px;
     span {
       font-size: 16px;
     }
   }
-  .profit .container h2 {
+  .profit .container__vuejs h2 {
     font-size: 29px;
   }
-  .problems .container h2 {
+  .problems .container__vuejs h2 {
     font-size: 28px;
   }
-  .story .container h2 {
+  .story .container__vuejs h2 {
     font-size: 27px;
   }
-  .price .container h2 {
+  .price .container__vuejs h2 {
     font-size: 29px;
   }
-  .feedback .container h2 {
+  .feedback .container__vuejs h2 {
     font-size: 28px;
   }
   .blog .--container__blog h2 {
     font-size: 30px;
   }
-  .price .container .price__content .--first .--bottom {
+  .price .container__vuejs .price__content .--first .--bottom {
     height: 65px;
   }
   .price
-    .container
+    .container__vuejs
     .price__content
     .wrapper__item-slider
     .price__content-item
     .--bottom {
     height: 65px;
   }
-  .price .container .price__content .--first .item > p {
+  .price .container__vuejs .price__content .--first .item > p {
     line-height: 16px;
   }
   .price
-    .container
+    .container__vuejs
     .price__content
     .wrapper__item-slider
     .price__content-item
@@ -1762,7 +1810,11 @@
     .favorite {
     width: 176px;
   }
-  .price .container .price__content .wrapper__item-slider .price__content-item {
+  .price
+    .container__vuejs
+    .price__content
+    .wrapper__item-slider
+    .price__content-item {
     &:hover {
       .--title {
         align-items: flex-start;
