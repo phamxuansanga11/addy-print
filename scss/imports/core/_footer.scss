@@ -93,7 +93,7 @@ footer {
       .--nthchild4 {
         padding-left: 30px;
         .btn__download {
-          .btn {
+          .btn__vuejs {
             a {
               display: block;
             }
@@ -212,10 +212,15 @@ footer {
 }
 
 @media screen and(max-width: 576px) {
-  .btn__download-chplay.btn {
+  .btn__download-chplay.btn__vuejs {
     margin-bottom: 0;
   }
-  footer .--container__footer .wrapper__gird .--nthchild4 .btn__download .btn {
+  footer
+    .--container__footer
+    .wrapper__gird
+    .--nthchild4
+    .btn__download
+    .btn__vuejs {
     margin-right: 0;
     margin-bottom: 0;
   }

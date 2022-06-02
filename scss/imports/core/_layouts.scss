@@ -25,7 +25,7 @@ body {
   ); // tuỳ chỉnh
   background: $white-cl;
   position: relative;
-  .container-fluid {
+  .container-fluid__vuejs {
     width: 100%;
     padding-right: var(--gap);
     padding-left: var(--gap);
@@ -36,7 +36,7 @@ body {
       padding-left: calc(var(--gap) / 2);
     }
   }
-  .container {
+  .container__vuejs {
     max-width: $container-width;
     width: 100%;
     padding-right: calc(var(--gap) / 2);
@@ -46,22 +46,22 @@ body {
   }
 
   @media (min-width: $xxs-min) {
-    .container {
+    .container__vuejs {
       max-width: 540px;
     }
   }
   @media (min-width: $xs-min) {
-    .container {
+    .container__vuejs {
       max-width: 720px;
     }
   }
   @media (min-width: $sm-min) {
-    .container {
+    .container__vuejs {
       max-width: 960px;
     }
   }
   @media (min-width: $md-min) {
-    .container {
+    .container__vuejs {
       max-width: $container-width;
     }
   }

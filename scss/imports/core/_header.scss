@@ -204,33 +204,33 @@ header {
 }
 
 @media screen and(max-width: 1200px) {
-  header .container .main__header .main__header-nav {
+  header .container__vuejs .main__header .main__header-nav {
     margin-right: auto;
     margin-left: auto;
   }
 }
 
 @media screen and(max-width: 993px) {
-  header .container .main__header {
+  header .container__vuejs .main__header {
     justify-content: space-between;
   }
-  header .container .main__header .main__header-btn {
+  header .container__vuejs .main__header .main__header-btn {
     display: none;
   }
-  header .container .main__header .main__header-nav ul li {
+  header .container__vuejs .main__header .main__header-nav ul li {
     margin-right: 0;
   }
-  header .container .main__header .main__header-nav {
+  header .container__vuejs .main__header .main__header-nav {
     margin-right: 0;
     margin-left: auto;
   }
 }
 
 @media screen and(max-width: 767px) {
-  header .container .main__header .main__header-nav {
+  header .container__vuejs .main__header .main__header-nav {
     display: none;
   }
-  header .container .main__header .main__header-nav-mobile {
+  header .container__vuejs .main__header .main__header-nav-mobile {
     display: block;
   }
   .search {
@@ -241,7 +241,7 @@ header {
 @media screen and(max-width: 576px) {
   header {
     height: var(--height-header-mobile);
-    .container {
+    .container__vuejs {
       .main__header {
         height: var(--height-header-mobile);
       }
