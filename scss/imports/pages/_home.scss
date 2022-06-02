@@ -32,7 +32,7 @@
     }
     .download__btn {
       display: flex;
-      .btn {
+      .btn__vuejs {
         margin: 0 10px;
         a {
           display: block;
@@ -44,7 +44,7 @@
 
 .problems {
   margin-top: 54px;
-  .container__vuejs {
+  .container {
     h2 {
       font-family: "InterMedium500";
       font-size: 44px;
@@ -112,8 +112,8 @@
 }
 
 .profit {
-  margin-top: 100px;
-  .container__vuejs {
+  margin-top: 54px;
+  .container {
     h2 {
       font-family: "InterMedium500";
       font-size: 44px;
@@ -174,8 +174,8 @@
 }
 
 .price {
-  margin-top: 100px;
-  .container__vuejs {
+  margin-top: 54px;
+  .container {
     h2 {
       font-family: "InterMedium500";
       font-size: 44px;
@@ -351,8 +351,8 @@
 }
 
 .story {
-  margin-top: 100px;
-  .container__vuejs {
+  margin-top: 54px;
+  .container {
     h2 {
       font-family: "InterMedium500";
       font-size: 44px;
@@ -430,7 +430,7 @@
 }
 
 .feedback {
-  margin-top: 100px;
+  margin-top: 60px;
   margin-bottom: 100px;
   .--container__feedback {
     position: relative;
@@ -515,7 +515,7 @@
       left: 75px;
       bottom: 2px;
       display: flex;
-      .btn {
+      .btn__vuejs {
         width: 44px;
         height: 44px;
         border-radius: 26px;
@@ -547,7 +547,7 @@
 }
 
 .contact {
-  .container__vuejs {
+  .container {
     .contact__title {
       text-align: center;
       margin-bottom: 44px;
@@ -561,7 +561,7 @@
     .contact__btn {
       display: flex;
       justify-content: center;
-      .btn {
+      .btn__vuejs {
         width: 420px;
         height: 56px;
         border-radius: 30px;
@@ -569,6 +569,7 @@
         justify-content: center;
         align-items: center;
         margin: 0 16px;
+        text-decoration: none;
         i {
           display: flex;
         }
@@ -614,7 +615,7 @@
   .contact__form {
     margin-top: 44px;
     background-color: #fff4f4;
-    .container__vuejs {
+    .container {
       .contact__form-content {
         display: flex;
         justify-content: space-between;
@@ -700,7 +701,7 @@
 }
 
 .blog {
-  margin-top: 100px;
+  margin-top: 60px;
   margin-bottom: 180px;
   .--container__blog {
     position: relative;
@@ -821,6 +822,7 @@
           border-radius: 6px;
           display: flex;
           justify-content: space-evenly;
+          text-decoration: none;
           p {
             font-family: "InterRegular400";
             font-size: 16px;
@@ -837,7 +839,7 @@
       }
     }
     .btn__slider-blog {
-      .btn {
+      .btn__vuejs {
         width: 44px;
         height: 44px;
         border-radius: 26px;
@@ -883,18 +885,18 @@
 }
 
 @media screen and(max-width: 1255px) {
-  .price .container__vuejs .price__content {
+  .price .container .price__content {
     overflow-x: scroll;
     overflow-y: visible;
     z-index: 2;
   }
-  .price .container__vuejs .price__content .--first {
+  .price .container .price__content .--first {
     background-color: #ffffff;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     position: absolute;
   }
-  .price .container__vuejs .price__content .wrapper__item-slider {
+  .price .container .price__content .wrapper__item-slider {
     z-index: 1;
     transform: translateX(309px);
   }
@@ -904,19 +906,19 @@
   .download .wrapper__text {
     width: 750px;
   }
-  .problems .container__vuejs .problems__grid {
+  .problems .container .problems__grid {
     margin-top: 70px;
   }
-  .problems .container__vuejs .problems__grid {
+  .problems .container .problems__grid {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .problems .container__vuejs .problems__grid .--left img {
+  .problems .container .problems__grid .--left img {
     width: auto;
   }
   .feedback
-    .container__vuejs
+    .container
     .feedback__slider
     .feedback__slider-item
     .feedback__slider-text
@@ -932,7 +934,7 @@
       top: 33%;
     }
   }
-  .price .container__vuejs .price__content .--first .item {
+  .price .container .price__content .--first .item {
     height: 55px;
     padding: 0;
     padding-left: 10px;
@@ -941,11 +943,11 @@
       margin: auto;
     }
   }
-  .price .container__vuejs .price__content .--first .--title {
+  .price .container .price__content .--first .--title {
     height: 70px;
   }
   .price
-    .container__vuejs
+    .container
     .price__content
     .wrapper__item-slider
     .price__content-item
@@ -953,22 +955,18 @@
     height: 70px;
   }
   .price
-    .container__vuejs
+    .container
     .price__content
     .wrapper__item-slider
     .price__content-item
     .item {
     height: 55px;
   }
-  .price
-    .container__vuejs
-    .price__content
-    .wrapper__item-slider
-    .price__content-item {
+  .price .container .price__content .wrapper__item-slider .price__content-item {
     width: 245px;
   }
   .price
-    .container__vuejs
+    .container
     .price__content
     .wrapper__item-slider
     .price__content-item
@@ -978,7 +976,7 @@
     height: 49px;
   }
   .price
-    .container__vuejs
+    .container
     .price__content
     .wrapper__item-slider
     .price__content-item
@@ -987,7 +985,7 @@
     font-size: 15px;
   }
   .price
-    .container__vuejs
+    .container
     .price__content
     .wrapper__item-slider
     .price__content-item
@@ -997,7 +995,7 @@
     font-size: 15px;
   }
   .price
-    .container__vuejs
+    .container
     .price__content
     .wrapper__item-slider
     .price__content-item
@@ -1006,14 +1004,14 @@
     width: 160px;
   }
   .price
-    .container__vuejs
+    .container
     .price__content
     .wrapper__item-slider
     .price__content-item
     .--bottom {
     height: 78px;
   }
-  .price .container__vuejs .price__content .--first .--bottom {
+  .price .container .price__content .--first .--bottom {
     height: 78px;
   }
   .feedback .--container__feedback .feedback__slider {
@@ -1043,20 +1041,20 @@
       margin: 0 auto 20px auto;
     }
   }
-  .feedback .container__vuejs h2 {
+  .feedback .container h2 {
     font-size: 37px;
   }
-  .download .wrapper__text .download__btn .btn {
+  .download .wrapper__text .download__btn .btn__vuejs {
     margin: 0 20px;
   }
-  .story .container__vuejs .story__content {
+  .story .container .story__content {
     margin-left: 0;
     margin-right: 0;
   }
-  .story .container__vuejs .story__content .story__content-text {
+  .story .container .story__content .story__content-text {
     padding-left: 20px;
   }
-  .story .container__vuejs .story__content .story__content-text {
+  .story .container .story__content .story__content-text {
     .param {
       font-size: 23px;
     }
@@ -1067,7 +1065,7 @@
       font-size: 15px;
     }
   }
-  .feedback .container__vuejs .feedback__slider .feedback__slider-item {
+  .feedback .container .feedback__slider .feedback__slider-item {
     .feedback__slider-img {
       -webkit-box-shadow: -18px 15px 0px 2px #ffebeb;
       box-shadow: -18px 15px 0px 2px #ffebeb;
@@ -1080,26 +1078,26 @@
       object-fit: cover;
     }
   }
-  .feedback .container__vuejs .feedback__slider {
+  .feedback .container .feedback__slider {
     padding-bottom: 60px;
     .feedback__slider-btn {
       left: 0;
       bottom: -5px;
     }
   }
-  .contact .container__vuejs .contact__btn .hotline p {
+  .contact .container .contact__btn .hotline p {
     font-size: 19px;
     span {
       font-size: 18px;
     }
   }
-  .contact .container__vuejs .contact__btn .email p {
+  .contact .container .contact__btn .email p {
     font-size: 19px;
     span {
       font-size: 18px;
     }
   }
-  .contact .contact__form .container__vuejs .contact__form-content {
+  .contact .contact__form .container .contact__form-content {
     flex-direction: column;
     padding: 40px 0;
     .content__img {
@@ -1109,11 +1107,7 @@
       }
     }
   }
-  .contact
-    .contact__form
-    .container__vuejs
-    .contact__form-content
-    .content__form {
+  .contact .contact__form .container .contact__form-content .content__form {
     width: 100%;
     margin-top: 20px;
   }
@@ -1132,22 +1126,22 @@
     font-size: 13px;
     line-height: 18px;
   }
-  .price .container__vuejs .price__content {
+  .price .container .price__content {
     overflow-x: scroll;
     overflow-y: visible;
     z-index: 2;
   }
-  .price .container__vuejs .price__content .--first {
+  .price .container .price__content .--first {
     background-color: #ffffff;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     position: absolute;
   }
-  .price .container__vuejs .price__content .wrapper__item-slider {
+  .price .container .price__content .wrapper__item-slider {
     z-index: 1;
     transform: translateX(309px);
   }
-  .price .container__vuejs .price__content .--first .item {
+  .price .container .price__content .--first .item {
     width: 100%;
   }
   .feedback .--container__feedback .feedback__slider-btn {
@@ -1202,18 +1196,18 @@
   .download .wrapper__text .download__param {
     max-width: 330px;
   }
-  .download .wrapper__text .download__btn .btn {
+  .download .wrapper__text .download__btn .btn__vuejs {
     margin: 0 5px;
   }
-  .profit .container__vuejs .profit__content .profit__content-item {
+  .profit .container .profit__content .profit__content-item {
     width: 100%;
     margin: 10px 5px;
   }
-  .story .container__vuejs .story__content {
+  .story .container .story__content {
     display: flex;
     flex-direction: column-reverse;
   }
-  .story .container__vuejs .story__content .story__content-text {
+  .story .container .story__content .story__content-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1232,7 +1226,7 @@
       padding-bottom: 10px;
     }
   }
-  .feedback .container__vuejs .feedback__slider .feedback__slider-item {
+  .feedback .container .feedback__slider .feedback__slider-item {
     grid-template-columns: 1fr;
     .feedback__slider-img {
       box-shadow: none;
@@ -1242,14 +1236,14 @@
       }
     }
   }
-  .contact .container__vuejs .contact__title h2 {
+  .contact .container .contact__title h2 {
     line-height: 37px;
   }
-  .contact .container__vuejs .contact__btn {
+  .contact .container .contact__btn {
     flex-direction: column;
     align-items: center;
   }
-  .contact .container__vuejs .contact__btn .email {
+  .contact .container .contact__btn .email {
     margin-top: 20px;
   }
   .blog .--container__blog .blog__slider {
@@ -1258,22 +1252,18 @@
   .blog .--container__blog .btn__slider-blog {
     display: none;
   }
-  .price .container__vuejs .price__content .--first {
+  .price .container .price__content .--first {
     width: 250px;
   }
-  .price .container__vuejs .price__content .wrapper__item-slider {
+  .price .container .price__content .wrapper__item-slider {
     transform: translateX(256px);
   }
-  .price
-    .container__vuejs
-    .price__content
-    .wrapper__item-slider
-    .price__content-item {
+  .price .container .price__content .wrapper__item-slider .price__content-item {
     width: 255px;
     margin: 0 2px;
   }
   .price
-    .container__vuejs
+    .container
     .price__content
     .wrapper__item-slider
     .price__content-item
@@ -1281,13 +1271,13 @@
     .item-btn {
     width: 200px;
   }
-  .price .container__vuejs .price__content .--first .item > p {
+  .price .container .price__content .--first .item > p {
     font-size: 14px;
   }
-  .story .container__vuejs .story__content .story__content-text {
+  .story .container .story__content .story__content-text {
     border-radius: 6px;
   }
-  .story .container__vuejs .story__content .story__content-img {
+  .story .container .story__content .story__content-img {
     border-radius: 6px;
   }
   .blog .--container__blog .blog__slider .blog__slider-item {
@@ -1306,7 +1296,7 @@
 }
 
 @media screen and(max-width: 576px) {
-  header .container__vuejs .main__header .main__header-logo svg {
+  header .container .main__header .main__header-logo svg {
     width: 75%;
   }
   .download .wrapper__text {
@@ -1321,26 +1311,26 @@
     max-width: 330px;
     line-height: 40px;
   }
-  .problems .container__vuejs h2 {
+  .problems .container h2 {
     font-size: 37px;
   }
-  .profit .container__vuejs h2 {
+  .profit .container h2 {
     font-size: 37px;
   }
-  .story .container__vuejs h2 {
+  .story .container h2 {
     font-size: 37px;
   }
-  .price .container__vuejs h2 {
+  .price .container h2 {
     font-size: 37px;
   }
-  .story .container__vuejs .story__content .story__content-text .param {
+  .story .container .story__content .story__content-text .param {
     padding-right: 10px;
     font-size: 25px;
   }
-  .contact .container__vuejs .contact__btn .btn {
+  .contact .container .contact__btn .btn__vuejs {
     width: 390px;
   }
-  .contact .container__vuejs .contact__title h2 {
+  .contact .container .contact__title h2 {
     font-size: 30px;
   }
   .profit {
@@ -1362,31 +1352,23 @@
   .blog {
     margin-bottom: 140px;
   }
-  header
-    .container__vuejs
-    .main__header
-    .main__header-nav-mobile
-    .show__nav-menu {
+  header .container .main__header .main__header-nav-mobile .show__nav-menu {
     top: 60px;
   }
-  .price .container__vuejs .price__content .--first {
+  .price .container .price__content .--first {
     width: 225px;
   }
-  .price .container__vuejs .price__content .--first .item > p {
+  .price .container .price__content .--first .item > p {
     line-height: 20px;
   }
-  .price
-    .container__vuejs
-    .price__content
-    .wrapper__item-slider
-    .price__content-item {
+  .price .container .price__content .wrapper__item-slider .price__content-item {
     width: 200px;
   }
-  .price .container__vuejs .price__content .--first .--bottom {
+  .price .container .price__content .--first .--bottom {
     height: 60px;
   }
   .price
-    .container__vuejs
+    .container
     .price__content
     .wrapper__item-slider
     .price__content-item
@@ -1400,11 +1382,11 @@
       }
     }
   }
-  .price .container__vuejs .price__content .wrapper__item-slider {
+  .price .container .price__content .wrapper__item-slider {
     transform: translateX(238px);
   }
   .price
-    .container__vuejs
+    .container
     .price__content
     .wrapper__item-slider
     .price__content-item
@@ -1414,7 +1396,7 @@
     height: 36px;
   }
   .price
-    .container__vuejs
+    .container
     .price__content
     .wrapper__item-slider
     .price__content-item
@@ -1423,7 +1405,7 @@
     margin-bottom: 0;
   }
   .price
-    .container__vuejs
+    .container
     .price__content
     .wrapper__item-slider
     .price__content-item
@@ -1433,32 +1415,28 @@
     font-size: 13px;
     line-height: 36px;
   }
-  .input__signup .container__vuejs .input__signup-content .input .btn-signup {
+  .input__signup .container .input__signup-content .input .btn-signup {
     width: 100%;
     height: 40px;
   }
-  .input__signup .container__vuejs .input__signup-content .input .input-signup {
+  .input__signup .container .input__signup-content .input .input-signup {
     height: 42px;
     font-size: 16px;
   }
 }
 
 @media screen and(max-width: 464px) {
-  .price .container__vuejs .price__content .--first {
+  .price .container .price__content .--first {
     width: 225px;
   }
-  .price .container__vuejs .price__content .wrapper__item-slider {
+  .price .container .price__content .wrapper__item-slider {
     transform: translateX(228px);
   }
-  .price
-    .container__vuejs
-    .price__content
-    .wrapper__item-slider
-    .price__content-item {
+  .price .container .price__content .wrapper__item-slider .price__content-item {
     width: 196px;
   }
   .price
-    .container__vuejs
+    .container
     .price__content
     .wrapper__item-slider
     .price__content-item
@@ -1474,7 +1452,7 @@
     .param {
     margin-top: 15px;
   }
-  .contact .container__vuejs .contact__title {
+  .contact .container .contact__title {
     margin-bottom: 20px;
     > h2 {
       font-size: 21px;
@@ -1502,27 +1480,19 @@
     max-width: 269px;
     line-height: 40px;
   }
-  .contact .container__vuejs .contact__btn .btn {
+  .contact .container .contact__btn .btn__vuejs {
     width: 345px;
   }
-  .price .container__vuejs .price__content .--first {
+  .price .container .price__content .--first {
     width: 170px;
   }
-  .price .container__vuejs .price__content .wrapper__item-slider {
+  .price .container .price__content .wrapper__item-slider {
     transform: translateX(183px);
   }
-  .price
-    .container__vuejs
-    .price__content
-    .wrapper__item-slider
-    .price__content-item {
+  .price .container .price__content .wrapper__item-slider .price__content-item {
     width: 170px;
   }
-  .price
-    .container__vuejs
-    .price__content
-    .wrapper__item-slider
-    .price__content-item {
+  .price .container .price__content .wrapper__item-slider .price__content-item {
     &:hover {
       .--title {
         align-items: flex-start;
@@ -1531,7 +1501,7 @@
     }
   }
   .price
-    .container__vuejs
+    .container
     .price__content
     .wrapper__item-slider
     .price__content-item
@@ -1543,7 +1513,7 @@
     }
   }
   .price
-    .container__vuejs
+    .container
     .price__content
     .wrapper__item-slider
     .price__content-item
@@ -1553,7 +1523,7 @@
     transform: rotate(45deg) translate(29%, -102%);
   }
   .price
-    .container__vuejs
+    .container
     .price__content
     .wrapper__item-slider
     .price__content-item
@@ -1564,7 +1534,7 @@
     line-height: 30px;
   }
   .price
-    .container__vuejs
+    .container
     .price__content
     .wrapper__item-slider
     .price__content-item
@@ -1573,7 +1543,7 @@
     font-size: 14px;
   }
   .price
-    .container__vuejs
+    .container
     .price__content
     .wrapper__item-slider
     .price__content-item
@@ -1582,7 +1552,7 @@
     font-size: 13px;
     line-height: 17px;
   }
-  .price .container__vuejs .price__content .--first .item {
+  .price .container .price__content .--first .item {
     padding: 0 0 0 10px;
     > p {
       line-height: 17px;
@@ -1590,7 +1560,7 @@
     }
   }
   .price
-    .container__vuejs
+    .container
     .price__content
     .wrapper__item-slider
     .price__content-item
@@ -1610,17 +1580,13 @@
   .blog {
     margin-top: 50px;
   }
-  .contact
-    .contact__form
-    .container__vuejs
-    .contact__form-content
-    .content__form {
+  .contact .contact__form .container .contact__form-content .content__form {
     padding-right: 15px;
     padding-left: 15px;
   }
   .contact
     .contact__form
-    .container__vuejs
+    .container
     .contact__form-content
     .content__form
     form
@@ -1629,30 +1595,26 @@
     height: 63px;
     margin: 24px auto auto auto;
   }
-  .contact
-    .contact__form
-    .container__vuejs
-    .contact__form-content
-    .content__form {
+  .contact .contact__form .container .contact__form-content .content__form {
     height: 475px;
   }
 }
 
 @media screen and(max-width: 391px) {
-  .problems .container__vuejs .problems__grid .--right .item .item__text h3 {
+  .problems .container .problems__grid .--right .item .item__text h3 {
     font-size: 18px;
   }
-  .problems .container__vuejs .problems__grid .--right .item .item__text p {
+  .problems .container .problems__grid .--right .item .item__text p {
     font-size: 13px;
   }
-  .story .container__vuejs .story__content .story__content-text .param {
+  .story .container .story__content .story__content-text .param {
     font-size: 20px;
     margin-bottom: 20px;
   }
-  .story .container__vuejs .story__content .story__content-text .author {
+  .story .container .story__content .story__content-text .author {
     font-size: 16px;
   }
-  .story .container__vuejs .story__content .story__content-text .author-detail {
+  .story .container .story__content .story__content-text .author-detail {
     font-size: 13px;
   }
   .feedback
@@ -1687,27 +1649,23 @@
   .feedback .--container__feedback .feedback__slider .feedback__slider-item {
     gap: 1%;
   }
-  .contact .container__vuejs .contact__title {
+  .contact .container .contact__title {
     margin-bottom: 20px;
     > h2 {
       font-size: 21px;
     }
   }
-  .price .container__vuejs .price__content .--first {
+  .price .container .price__content .--first {
     width: 170px;
   }
-  .price .container__vuejs .price__content .wrapper__item-slider {
+  .price .container .price__content .wrapper__item-slider {
     transform: translateX(175px);
   }
-  .price
-    .container__vuejs
-    .price__content
-    .wrapper__item-slider
-    .price__content-item {
+  .price .container .price__content .wrapper__item-slider .price__content-item {
     width: 168px;
   }
   .price
-    .container__vuejs
+    .container
     .price__content
     .wrapper__item-slider
     .price__content-item
@@ -1719,19 +1677,15 @@
       font-size: 15px;
     }
   }
-  .price .container__vuejs .price__content .--first .item > p {
+  .price .container .price__content .--first .item > p {
     font-size: 13px;
   }
-  .contact
-    .contact__form
-    .container__vuejs
-    .contact__form-content
-    .content__form {
+  .contact .contact__form .container .contact__form-content .content__form {
     height: 444px;
   }
   .contact
     .contact__form
-    .container__vuejs
+    .container
     .contact__form-content
     .content__form
     form
@@ -1742,7 +1696,7 @@
   }
   .contact
     .contact__form
-    .container__vuejs
+    .container
     .contact__form-content
     .content__form
     form
@@ -1753,56 +1707,56 @@
   .blog .--container__blog .blog__slider {
     height: 440px;
   }
-  .contact .container__vuejs .contact__btn .btn {
+  .contact .container .contact__btn .btn__vuejs {
     width: 290px;
     height: 46px;
   }
-  .contact .container__vuejs .contact__btn .hotline p {
+  .contact .container .contact__btn .hotline p {
     font-size: 16px;
     span {
       font-size: 16px;
     }
   }
-  .contact .container__vuejs .contact__btn .email p {
+  .contact .container .contact__btn .email p {
     font-size: 16px;
     span {
       font-size: 16px;
     }
   }
-  .profit .container__vuejs h2 {
+  .profit .container h2 {
     font-size: 29px;
   }
-  .problems .container__vuejs h2 {
+  .problems .container h2 {
     font-size: 28px;
   }
-  .story .container__vuejs h2 {
+  .story .container h2 {
     font-size: 27px;
   }
-  .price .container__vuejs h2 {
+  .price .container h2 {
     font-size: 29px;
   }
-  .feedback .container__vuejs h2 {
+  .feedback .container h2 {
     font-size: 28px;
   }
   .blog .--container__blog h2 {
     font-size: 30px;
   }
-  .price .container__vuejs .price__content .--first .--bottom {
+  .price .container .price__content .--first .--bottom {
     height: 65px;
   }
   .price
-    .container__vuejs
+    .container
     .price__content
     .wrapper__item-slider
     .price__content-item
     .--bottom {
     height: 65px;
   }
-  .price .container__vuejs .price__content .--first .item > p {
+  .price .container .price__content .--first .item > p {
     line-height: 16px;
   }
   .price
-    .container__vuejs
+    .container
     .price__content
     .wrapper__item-slider
     .price__content-item
@@ -1810,11 +1764,7 @@
     .favorite {
     width: 176px;
   }
-  .price
-    .container__vuejs
-    .price__content
-    .wrapper__item-slider
-    .price__content-item {
+  .price .container .price__content .wrapper__item-slider .price__content-item {
     &:hover {
       .--title {
         align-items: flex-start;

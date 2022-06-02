@@ -40,7 +40,7 @@
 .content__emailpage {
   margin-top: -100px;
   padding-bottom: 36px;
-  .container__vuejs {
+  .container {
     .wrapper__content {
       background-color: #ffffff;
       border-radius: 24px;
@@ -357,31 +357,31 @@
 }
 
 @media screen and(max-width: 1200px) {
-  .content__emailpage .container__vuejs .wrapper__content .logo {
+  .content__emailpage .container .wrapper__content .logo {
     padding-top: 35px;
     padding-bottom: 35px;
   }
-  .content__emailpage .container__vuejs .wrapper__content .content__marketing {
+  .content__emailpage .container .wrapper__content .content__marketing {
     margin-left: 100px;
     margin-right: 100px;
   }
-  .content__emailpage .container__vuejs .wrapper__content .content__posts {
+  .content__emailpage .container .wrapper__content .content__posts {
     padding-left: 110px;
     padding-right: 110px;
   }
 }
 
 @media screen and(max-width: 993px) {
-  .content__emailpage .container__vuejs .wrapper__content .content__marketing {
+  .content__emailpage .container .wrapper__content .content__marketing {
     margin-left: 70px;
     margin-right: 70px;
   }
-  .content__emailpage .container__vuejs .wrapper__content .content__posts {
+  .content__emailpage .container .wrapper__content .content__posts {
     padding-left: 70px;
     padding-right: 70px;
   }
   .content__emailpage
-    .container__vuejs
+    .container
     .wrapper__content
     .content__posts
     .item
@@ -389,16 +389,11 @@
     h3 {
     font-size: 16px;
   }
-  .content__emailpage
-    .container__vuejs
-    .wrapper__content
-    .content__posts
-    .item
-    p {
+  .content__emailpage .container .wrapper__content .content__posts .item p {
     font-size: 12px;
   }
   .content__emailpage
-    .container__vuejs
+    .container
     .wrapper__content
     .content__posts
     .item
@@ -408,7 +403,7 @@
     padding-right: 7px;
   }
   .content__emailpage
-    .container__vuejs
+    .container
     .wrapper__content
     .content__posts
     .item
@@ -420,7 +415,7 @@
     line-height: 18px;
   }
   .content__emailpage
-    .container__vuejs
+    .container
     .wrapper__content
     .content__posts
     .item
@@ -434,28 +429,24 @@
 }
 
 @media screen and(max-width: 767px) {
-  .content__emailpage .container__vuejs .wrapper__content .content__marketing {
+  .content__emailpage .container .wrapper__content .content__marketing {
     margin-left: 0;
     margin-right: 0;
     padding-left: 0px;
     padding-right: 0px;
     border-radius: 0;
   }
-  .content__emailpage
-    .container__vuejs
-    .wrapper__content
-    .content__marketing
-    .param {
+  .content__emailpage .container .wrapper__content .content__marketing .param {
     padding-left: 10px;
     padding-right: 10px;
   }
-  .content__emailpage .container__vuejs .wrapper__content .content__posts {
+  .content__emailpage .container .wrapper__content .content__posts {
     grid-template-columns: 1fr;
     padding-left: 8px;
     padding-right: 8px;
   }
   .content__emailpage
-    .container__vuejs
+    .container
     .wrapper__content
     .content__posts
     .item
@@ -473,14 +464,14 @@
       font-size: 20px;
     }
   }
-  .content__emailpage .container__vuejs .wrapper__content .footer h2 {
+  .content__emailpage .container .wrapper__content .footer h2 {
     font-size: 16px;
   }
-  .content__emailpage .container__vuejs .wrapper__content .footer .address {
+  .content__emailpage .container .wrapper__content .footer .address {
     font-size: 13px;
   }
   .content__emailpage
-    .container__vuejs
+    .container
     .wrapper__content
     .footer
     .info__contact
@@ -492,7 +483,7 @@
     }
   }
   .content__emailpage
-    .container__vuejs
+    .container
     .wrapper__content
     .footer
     .info__contact
@@ -503,7 +494,7 @@
       font-size: 12px;
     }
   }
-  .content__emailpage .container__vuejs .wrapper__content .footer {
+  .content__emailpage .container .wrapper__content .footer {
     padding-left: 17px;
     padding-right: 17px;
     padding-bottom: 15px;
@@ -511,11 +502,7 @@
 }
 
 @media screen and(max-width: 390px) {
-  .content__emailpage
-    .container__vuejs
-    .wrapper__content
-    .footer
-    .info__contact {
+  .content__emailpage .container .wrapper__content .footer .info__contact {
     flex-direction: column;
     .hotline::after {
       display: none;

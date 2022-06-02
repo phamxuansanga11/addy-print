@@ -22,6 +22,12 @@
     <meta property="og:image" content="" />
 
     <link rel="stylesheet" href="./fonts/fontawesome/css/all.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="dest/style.min.css" />
     <link rel="stylesheet" href="dest/fonts.css" />
   </head>
@@ -29,7 +35,7 @@
   <body class="contactpage">
     <!-- HEADER -->
     <header>
-      <div class="container__vuejs --container__header">
+      <div class="container --container__header">
         <div class="main__header home">
           <div class="main__header-logo">
             <a href="./index.html">
@@ -50,11 +56,13 @@
           <div class="main__header-nav">
             <ul class="list__option-vuejs">
               <li class="option-vuejs">
-                <a class="active" href="./index.html">Trang chủ</a>
+                <a href="./index.html">Trang chủ</a>
               </li>
-              <li class="option-vuejs"><p href="#price">Báo giá</p></li>
-              <li class="option-vuejs"><a href="./blog.html">Bài viết</a></li>
-              <li class="option-vuejs"><p href="#contact">Liên hệ</p></li>
+              <li class="option-vuejs"><a href="#price">Báo giá</a></li>
+              <li class="option-vuejs">
+                <a class="active" href="./blog.html">Bài viết</a>
+              </li>
+              <li class="option-vuejs"><a href="#contact">Liên hệ</a></li>
             </ul>
           </div>
           <div class="main__header-nav-mobile">
@@ -67,11 +75,11 @@
                   <a href="./index.html">Trang chủ</a>
                 </li>
                 <li class="option option-vuejs">
-                  <p href="#price">Báo giá</p>
+                  <a href="#price">Báo giá</a>
                 </li>
                 <li class="option-vuejs"><a href="./blog.html">Bài viết</a></li>
                 <li class="option option-vuejs">
-                  <p href="#contact">Liên hệ</p>
+                  <a href="#contact">Liên hệ</a>
                 </li>
               </ul>
             </div>
@@ -93,7 +101,7 @@
         </div>
       </section>
       <section class="blog-detail__content">
-        <div class="container__vuejs">
+        <div class="container">
           <div class="btn-back">
             <a class="back-to-blogs" href="./blog.html">Bài viết</a>
             <span> > </span>
@@ -377,7 +385,7 @@
             </div>
           </div>
           <div class="input__signup">
-            <div class="container__vuejs --container__blog-detail">
+            <div class="container --container__blog-detail">
               <div class="input__signup-content">
                 <h2>ĐĂNG KÍ NHẬN BÀI VIẾT</h2>
                 <div class="input">
@@ -401,7 +409,7 @@
 
     <!-- FOOTER -->
     <footer>
-      <div class="container__vuejs --container__footer">
+      <div class="container --container__footer">
         <div class="wrapper__gird">
           <div class="wrapper__gird-item --nthchild1">
             <div class="title">
@@ -481,6 +489,21 @@
       </div>
     </footer>
 
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
     <script type="text/javascript" src="dest/jsmain.min.js"></script>
     <script type="text/javascript" src="dest/blogdetail.js"></script>
   </body>

@@ -236,7 +236,7 @@ article {
 .input__signup {
   // margin-top: 100px;
   margin-bottom: 160px;
-  .container__vuejs {
+  .container {
     .input__signup-content {
       background-color: #fcdbd0;
       border-radius: 8px;
@@ -272,7 +272,7 @@ article {
           outline: none;
           color: #ffffff;
           font-family: "InterRegular400";
-          font-size: 18px;
+          font-size: 16px;
           line-height: 22px;
           display: flex;
           justify-content: center;

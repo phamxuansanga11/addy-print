@@ -1,7 +1,7 @@
 .blogs {
   margin-top: 56px;
   margin-bottom: 100px;
-  .container__vuejs {
+  .container {
     .blog__content {
       display: grid;
       grid-template-columns: 74% 23%;
@@ -124,7 +124,7 @@
         display: flex;
         justify-content: center;
         border-radius: 6px;
-        .btn {
+        .btn__vuejs {
           width: 44px;
           height: 44px;
           background-color: #ffffff;
@@ -168,7 +168,7 @@
 }
 
 @media screen and(max-width: 1200px) {
-  .blogs .container__vuejs .blog__content {
+  .blogs .container .blog__content {
     display: grid;
     grid-template-columns: 71% 26%;
     gap: 3%;
@@ -176,11 +176,11 @@
 }
 
 @media screen and(max-width: 993px) {
-  .blogs .container__vuejs .blog__content {
+  .blogs .container .blog__content {
     grid-template-columns: 1fr;
   }
   .blogs
-    .container__vuejs
+    .container
     .blog__content
     .blog__content-sidebar
     .menu__blog
@@ -188,13 +188,13 @@
     .option-vuejs {
     width: 220px;
   }
-  .blogs .container__vuejs .blog__content .blog__content-sidebar .thumbnail {
+  .blogs .container .blog__content .blog__content-sidebar .thumbnail {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   .blogs
-    .container__vuejs
+    .container
     .blog__content
     .blog__content-sidebar
     .thumbnail
@@ -210,16 +210,16 @@
   .search .search__input {
     width: 330px;
   }
-  .blogs .container__vuejs .blog__content .blog__content-item {
+  .blogs .container .blog__content .blog__content-item {
     grid-template-columns: 1fr;
   }
-  .blogs .container__vuejs .blog__content {
+  .blogs .container .blog__content {
     gap: 50px;
   }
   .input__signup {
     margin-top: 50px;
   }
-  .blogs .container__vuejs .blog__content .blog__content-sidebar .thumbnail {
+  .blogs .container .blog__content .blog__content-sidebar .thumbnail {
     flex-direction: column;
   }
   footer {
@@ -228,10 +228,10 @@
   footer .--container__footer .wrapper__gird {
     gap: 5px;
   }
-  .input__signup .container__vuejs .input__signup-content .input {
+  .input__signup .container .input__signup-content .input {
     display: block;
   }
-  .input__signup .container__vuejs .input__signup-content .input .input-signup {
+  .input__signup .container .input__signup-content .input .input-signup {
     margin-bottom: 16px;
     width: 100%;
   }

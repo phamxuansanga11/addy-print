@@ -40,6 +40,7 @@ header {
               color: $black-cl;
               padding: 10px 0;
               position: relative;
+              text-decoration: none;
               &::after {
                 content: "";
                 height: 4px;
@@ -204,38 +205,38 @@ header {
 }
 
 @media screen and(max-width: 1200px) {
-  header .container__vuejs .main__header .main__header-nav {
+  header .container .main__header .main__header-nav {
     margin-right: auto;
     margin-left: auto;
   }
 }
 
 @media screen and(max-width: 993px) {
-  header .container__vuejs .main__header {
+  header .container .main__header {
     justify-content: space-between;
   }
-  header .container__vuejs .main__header .main__header-btn {
+  header .container .main__header .main__header-btn {
     display: none;
   }
   header
-    .container__vuejs
+    .container
     .main__header
     .main__header-nav
     .list__option-vuejs
     .option-vuejs {
     margin-right: 0;
   }
-  header .container__vuejs .main__header .main__header-nav {
+  header .container .main__header .main__header-nav {
     margin-right: 0;
     margin-left: auto;
   }
 }
 
 @media screen and(max-width: 767px) {
-  header .container__vuejs .main__header .main__header-nav {
+  header .container .main__header .main__header-nav {
     display: none;
   }
-  header .container__vuejs .main__header .main__header-nav-mobile {
+  header .container .main__header .main__header-nav-mobile {
     display: block;
   }
   .search {
@@ -246,7 +247,7 @@ header {
 @media screen and(max-width: 576px) {
   header {
     height: var(--height-header-mobile);
-    .container__vuejs {
+    .container {
       .main__header {
         height: var(--height-header-mobile);
       }
